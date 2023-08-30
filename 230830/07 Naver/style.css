@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#container {
+  width: 700px;
+  margin: auto;
+}
+.naver {
+  color: #04cf5c;
+}
+#btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 0px solid #000;
+}
+a {
+  text-decoration: none;
+}
