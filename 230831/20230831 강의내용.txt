@@ -1,0 +1,64 @@
+*slack URL
+https://join.slack.com/t/ezen-fad-230822/shared_invite/zt-22cp7s5z8-K_KVdPz7gJPLcSXVfeVVTg
+
+*질문하기 Tip
+1.이거 안되는데, 한 번 봐주세요!! (*안좋은 질문방법)
+
+2.제가 A코드를 작성하고 있었는데, B지점에 C라는 메세지가 나오면서 오류가 발생했습니다. 그래서 구글혹은 MDN을 찾아보니까 D라고 하면된다고 해서 해봤는데, 그럼에도 불구하고 에러가 해결되지 않는것 같습니다. 해당 에러를 해결하려고 했는데, 안되서 여쭤봅니다. (*스마트한 질문방법)
+
+*웹퍼블리셔 & 프론트엔드 개발자
+화면구성 실력 => 최대한 빠르게 업그레이드하고싶다면!!
+=> 박스구성을 잘 만들 수 있어야 한다.
+
+*html > 목록 태그 : ul/ol + li
+
+*html > 테이블 태그 : table + tr(*table row) / td(*table data) / th(*table header)
+
+*html 파일 안에 직접 css 스타일을 적용하는 방법 : 인라인스타일 시트적용
+*html 파일 밖에 css 스타일 파일을 생성해서 적용하는 방법 : 외부스타일 시트적용
+
+colspan = 1개 row / 대표 col
+
+9개의 row
+
+첫번째 row rowspan
+
+even : 짝수 / odd : 홀수
+
+usemap : 특정영역을 클릭했을 때, 해당 경로로 이동하는 기능
+
+Form 태그 (*입력양식 태그)
+- text 태그 (*id값)
+- password 태그 (*pw값)
+
+- radio (*여러개 옵션 가운데, 1개만 선택)
+- checkbox (*여러개 옵션 중복 선택)
+
+- textarea (*스티커 메모)
+- button (*사용자로부터 버튼 클릭유도)
+- submit (*type 버튼)
+
+https://search.naver.com/search.naver?where=nexearch
+&sm=top_hty
+&fbm=0
+&ie=utf8
+&query=나이키
+
+*HTML 태그 종류
+img / div / span / a / form / table / ul / li ...
+1) block 태그 :
+- 1개 태그 => 1개의 행을 모두 차지한다!!!
+- div, h1 ~ h6, p, ul, ol, li, hr, table.....
+
+2) inline 태그
+- 1개 태그 => 1개의 행을 모두 차지하지 않는다!!!
+- a, label, span....
+- 태생적으로 가로 너비값을 지정해줄 수 없음!!!
+
+*시멘틱 태그 : 태그에 의미를 부여해서 웹페이지를 기획하도록 만들어놓은 일종의 문법!!!
+
+
+
+
+
+
