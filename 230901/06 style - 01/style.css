@@ -1,0 +1,41 @@
+/* * {
+  font-size: 30px;
+  color: red;
+}
+
+div {
+  font-size: 20px;
+}
+
+p:nth-child(2) {
+  font-size: 2em;
+}
+
+p:nth-child(3) {
+  font-size: 50px;
+}
+
+p:nth-child(4) {
+  font-size: 200%;
+}
+
+p:nth-child(5) {
+  font-size: 2rem;
+}
+
+/*p태그 기본 폰트사이즈 : 16p x 1em = 100% */
+
+#box {
+  width: 200px;
+  height: 200px;
+  background-color: #00f;
+}
+
+#box2 {
+  width: 50vw;
+  height: 30vh;
+  background-color: #ffffff;
+}
+
+/* Hex(Hexadecimal : 16진법)코드 */
+/* 0 ~ 9 + a ~ f(15) */
