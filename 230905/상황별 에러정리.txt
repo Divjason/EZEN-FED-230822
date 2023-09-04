@@ -1,0 +1,47 @@
+*git & Git Hub 사용시, 발생할 수 있는 오류사항
+
+1.git the requested URL returend error : 403
+- 발생상황 : 소스코드 Push할 때, 발생
+- 발생이유 : 소스코드 Push 시, 해당 주소에 대한 권한이 없기 때문
+- 해결방안 : git remote set-url origin "https://github-username@github.com/github-username/github-repository-name.git" => " "는 삭제, github-username & github-repository-name 영역 수정
+- 참고블로그 : https://beagle-dev.tistory.com/244
+
+2.nothing to commit, working tree clean
+- 발생상황 : commit 직후 git status 입력 시, 발생
+- 발생이유 : 원래 commit 직후 git status 입력 하면 깨끗하다고 나옴
+
+3.git permission denied (publickey)
+- 발생상황 : git clone, git pull 등 pc에서 명령어 입력 시, 발생
+- 발생이유 : git은 SSH 또는 http 기반으로 사용하게 됨. SSH key로 접속해서 사용하는 경우, 각 PC마다 SSH key등록 필수
+- 해결방안 : 터미널에서 ssh-keygen -t rsa -C "[본인의 Github 계정 이메일주소]" 생성 후 Github Setting 메뉴 SSH Key 에서 등록해줌
+- 참고블로그 : https://archijude.tistory.com/556
+
+4.dose not have a commit checked out
+- 발생상황 : git add . 입력 시, 발생
+- 발생이유 : 로컬 repository안에 다른 디렉토리(폴더)에 .git이 있기 때문에 발생
+- 해결방안 : add를 하고자 하는 폴더 열고, 숨김 폴더 모두 확인 후 하위 폴더 중 .git이 있는 폴더 전부 찾아서 .git 파일 모두 삭제
+- 참고블로그 : https://mmol.tistory.com/176
+
+5.Git remote origin already exists
+- 발생상황 : git remote add origin https://github.com/github-username/github-repository-name 입력 시, 발생
+- 발생이유 : 기존에 연결되어 있는 Git Hub repository가 있는데, 또 다시 새로운 repository에 소스코드를 올리려고 하면 발생되는 에러
+해결방안 : git remote remove origin 명령어 입력 시, 기존 연결되어 있는 repository와 연결해제 가능
+- 참고블로그 : https://coding-factory.tistory.com/619
+
+6.unable to auto-detect email address
+- 발생상황 : git config --global user.email / user.name 입력했음에도 git config --list입력 시, user.email과 user.name이 출력되지 않는 경우
+- 발생이유 : git bash 관리자 권한으로 입력하지 않았기 때문
+- 해결방안 : 로컬 컴퓨터 > git bash > 관리자 권한 > 재입력 시, 가능
+- 참고블로그 : https://woo-dev.tistory.com/76
+
+7.![reject] master -> master (fetch first) error: failed to push some refs
+- 발생상황 : git push origin master 시, 발생
+- 발생이유 : 기존 git hub에 업로드된 파일이 손실 될 수 있어서 나온 메세지
+- 해결방안 : git push origin +master 로 강제로 푸쉬하기
+- 참고블로그 : https://donggu1105.tistory.com/104
+
+8.fatal: refusing to merge unrelated histories
+- 발생상황 : git pull origin master 메세지 입력 시, 발생
+- 발생이유 : 애초에 공통되는 commit이 없기 때문에 pull명령어 사용불가
+- 해결방안 : git pull origin master --allow-unrelated-histories
+- 참고블로그 : https://jobc.tistory.com/177
