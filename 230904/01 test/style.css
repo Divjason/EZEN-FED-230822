@@ -1,0 +1,49 @@
+#container {
+  border: 1px solid #000;
+  width: 560px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+h1 {
+  text-align: center;
+}
+ul,
+li {
+  list-style: none;
+}
+li {
+  line-height: 30px;
+}
+table,
+th,
+td {
+  border: 1px solid gray;
+  border-collapse: collapse;
+  text-align: center;
+}
+th,
+td {
+  width: 100px;
+  padding: 5px;
+}
+
+#nospace,
+#nospace > tr,
+#nospace td {
+  border: none;
+}
+
+#nospace label {
+  width: 60px;
+  display: inline-block;
+  text-align: left;
+}
+
+#nospace input {
+  display: inline-block;
+  width: 200px;
+  margin-left: -25px;
+}
+textarea {
+  margin-bottom: 12px;
+}
