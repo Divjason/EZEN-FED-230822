@@ -1,0 +1,76 @@
+clone coding : 이미 만들어져있는 웹 사이트 및 웹 서비스를 그대로 모방하는 것
+
+수료 => 포트폴리오 (70%)
+이력서 & 자소서 (30%) / 
+1) 다수의 다양한 프로젝트 경험
+- html : 4개
+- css : 6개
+- JS : 7개
+- React : 4개
+
+2) 3~4개 정도의 핵심적인 프로젝트로 승부
+- 넷플릭스 a to z
+- 당근마켓 a to z
+
+CSS : 레이아웃 위치설정!!!!
+- flex / grid / position
+1.git사용방법
+
+- git 세팅
+
+- 유저 이름 / 이메일 세팅
+git config --global user.name "Divjason"
+git config --global user.email "sejinpark@tcocs.com"
+
+- 유저 이름 / 이메일 정상적으로 세팅 확인
+git config --list
+
+- 현재 작업중인 폴더에 git 세팅
+git init (*한 번만 입력해주시면 된다)
+
+- 현재 root폴더와 git hub repository를 연결
+git remote add origin https://github.com/Divjason/EZEN-FED-230822.git
+
+- 현재 root폴더와 git hub repository 정상연결 확인
+git remote -v
+> fetch / push
+
+현재 root폴더안에 있는 데이터 중에서 아직 git이라는 임시저장공간에 담아놓지 않은 데이터를 확인
+git status
+
+- root폴더 임시저장 폴더 (*.git)에 전송할 데이터 담기
+git add *
+
+- git hub에 데이터를 보낼 때, 어떠한 메세지로 기록해서 보낼 것인지 결정
+git commit -m "firstcommit"
+
+- git hub에 최종적으로 데이터를 전송하는 방법
+git push origin master
+
+
+**에러
+
+1) git permission denied (publickey)
+- git과 git hub SSH 암호화 기반
+- ssh-keygen -t rsa -C "sejinpark@tcocs.com" 
+- 고유한 ssh 전용키 생성!!!!
+
+
+2) dose not have a commit checked out
+- 현재 내가 연동하고자 하는 root폴더와 .git 임시저장 폴더 불일치하는 경우
+
+3) ![reject] master -> master (fetch first) error: failed to push some refs
+- git push origin +master
+- git clone git@github.com:Divjason/EZEN-FED-230822
+
+4) 
+git pull origin master --allow-unrelated-histories
+
+git remote set-url origin "https://github-username@github.com/github-username/github-repository-name.git"
+
+*CSS에서 배경이미지를 가져올 때에는
+기본적으로 이미지가 반복해서 불러오게 된다!!!
+Html5 문법: 수, 목
+CSS3 문법: 금, 월
+
+HTML5 & CSS3 : 레이아웃 / 반응형 / 실전 프로젝트
