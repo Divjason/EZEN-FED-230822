@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #ebfaff;
+}
+
+section {
+  width: 340px;
+  padding: 30px;
+  background-color: #fff;
+  margin: 50px auto;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+section nav.menu {
+  width: 100%;
+}
+
+section nav.menu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section nav.menu a {
+  font-size: 20px;
+  color: #666;
+}
+
+section nav.menu a:nth-of-type(1) {
+  float: left;
+}
+
+section nav.menu a:nth-of-type(2) {
+  float: right;
+}
+
+section article.profile {
+  width: 100%;
+  text-align: center;
+}
+
+section article.profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+section article.profile h1 {
+  color: #555;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+
+section article.profile h2 {
+  color: #bbb;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+section a.btnView {
+  display: block;
+  width: 180px;
+  height: 32px;
+  background-color: #444;
+  border-radius: 16px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 32px;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+section ul.contact {
+  margin-bottom: 25px;
+}
+
+section ul.contact li {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+section ul.contact li:last-child {
+  border-bottom: none;
+}
+
+section ul.contact li i {
+  width: 20%;
+  text-align: center;
+  color: #555;
+  font-size: 15px;
+  text-shadow: 2px 2px 2px #ddd;
+}
+
+section ul.contact li span {
+  color: #555;
+  font-weight: normal;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-family: "Orbitron", sans-serif;
+}
+
+section nav.others {
+  width: 100%;
+  text-align: center;
+}
+
+section nav.others a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 10px;
+  opacity: 0.4;
+}
+
+section nav.others a.on {
+  opacity: 1;
+  filter: saturate(1);
+}
+
+section nav.others a:nth-of-type(1) {
+  background-color: #35e0f7;
+  box-shadow: 5px 5px 10px rgba(74, 255, 255, 0.7);
+}
+section nav.others a:nth-of-type(2) {
+  background-color: #55f5cd;
+  box-shadow: 5px 5px 10px rgba(85, 245, 178, 0.7);
+}
+section nav.others a:nth-of-type(3) {
+  background-color: #ff80df;
+  box-shadow: 5px 5px 10px rgba(255, 128, 223, 0.7);
+}
+section nav.others a:nth-of-type(4) {
+  background-color: #a794fd;
+  box-shadow: 5px 5px 10px rgba(167, 148, 253, 0.7);
+}
