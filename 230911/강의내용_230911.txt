@@ -1,0 +1,27 @@
+1.오전 : 지난주까지 학습했던 내용 점검
+> html / css를 활용한 원페이지(*싱글페이지) 직접 제작해보는 미션 => with code review
+
+2.오전 : Figma => 그리드 / 플러그인
+
+3.오후 : Responsive Web (*반응형 웹)
+- width / height => px / vw & vh or %
+- px : 고정단위
+
+*피그마 > 레이아웃 그리드(*눈금선)
+1) 컬럼 : column (*열)
+2) 로우 : row (*행)
+3) 마진 : 그리드 바깥 양쪽 여백
+4) 거터 : gutter => 컬럼과 컬럼사이 혹은 로우와 로우사이의 간격을 의미 (*패딩)
+
+
+
+메일 : fa-solid fa-envelope-open
+카페 : fa-solid fa-trophy
+블로그 : fa-brands fa-blogger
+쇼핑 : fa-solid fa-bag-shopping
+뉴스 : fa-solid fa-radio
+증권 : fa-solid fa-chart-line
+부동산 : fa-solid fa-house
+지도 : fa-solid fa-map-location
+웹툰 : fa-solid fa-shield-cat
+etc : fa-solid fa-ellipsis
