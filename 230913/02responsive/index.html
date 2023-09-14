@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/02responsive/style.css" />
+    <script src="/02responsive/contents/js/jquery.min.js"></script>
+    <script src="/02responsive/script.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -198,10 +200,67 @@
             </li>
           </ul>
         </section>
-        <section class="blog-section"></section>
-        <section class="contact-section"></section>
+        <hr class="m-divider">
+        <section class="blog-section">
+          <div class="container">
+            <h2 class="sec-tit">BLOG</h2>
+            <ul class="blog-list">
+              <li>
+                <a href="#"><img src="/02responsive/contents/images/p-images/blog01.jpg" alt="blog01"></a>
+                <time datetime="2023-09-14">Sept 14, 2023</time>
+                <a href="#">
+                  <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#"><img src="/02responsive/contents/images/p-images/blog02.jpg" alt="blog02"></a>
+                <time datetime="2023-09-14">Sept 14, 2023</time>
+                <a href="#">
+                  <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#"><img src="/02responsive/contents/images/p-images/blog03.jpg" alt="blog03"></a>
+                <time datetime="2023-09-14">Sept 14, 2023</time>
+                <a href="#">
+                  <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="contact-section">
+          <div class="container">
+            <h2 class="sec-tit">CONTACT</h2>
+            <div class="form-box">
+              <form action="#">
+                <fieldset class="cfixed">
+                  <legend class="blind">CONTACT US</legend>
+                  <div class="form">
+                    <label for="name" class="blind">Name</label>
+                    <input type="text" id="name" placeholder="Name">
+                    <label for="phone" class="blind">Phone</label>
+                    <input type="tel" id="phone" placeholder="Phone">
+                    <label for="email" class="blind">Email</label>
+                    <input type="email" id="email" placeholder="Email">
+                  </div>
+                  <div class="textarea">
+                    <label for="message" class="blind">Message</label>
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                  </div>
+                </fieldset>
+                <div class="send-btn">
+                  <button>SEND MESSAGE</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
       </section>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.111677235935!2d126.97473421573828!3d37.575987879796195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2eaa19c763d%3A0xb28a32722d675764!2z6rSR7ZmU66y4KEd3YW5naHdhbXVuIEdhdGUp!5e0!3m2!1sko!2skr!4v1481946656451" frameborder="0" style="border: 0" allowfullscreen></iframe>
+        <p class="copyright">INDIGO</p>
+      </footer>
     </div>
   </body>
 </html>
