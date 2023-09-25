@@ -1,0 +1,68 @@
+@ColumnWidth: 60px;
+@GutterWidth: 20px;
+
+.span(@column) {
+  width: (@ColumnWidth * @column) + (@GutterWidth * (@column - 1));
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.row {
+  overflow: hidden;
+}
+
+.span_1,
+.span_2,
+.span_3,
+.span_4,
+.span_5,
+.span_6,
+.span_7,
+.span_8,
+.span_9,
+.span_10,
+.span_11,
+.span_12 {
+  float: left;
+  margin: 0 10px;
+}
+
+.span_1 {
+  .span(1);
+}
+.span_2 {
+  .span(2);
+}
+.span_3 {
+  .span(3);
+}
+.span_4 {
+  .span(4);
+}
+.span_5 {
+  .span(5);
+}
+.span_6 {
+  .span(6);
+}
+.span_7 {
+  .span(7);
+}
+.span_8 {
+  .span(8);
+}
+.span_9 {
+  .span(9);
+}
+.span_10 {
+  .span(10);
+}
+.span_11 {
+  .span(11);
+}
+.span_12 {
+  .span(12);
+}
