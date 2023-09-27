@@ -1,0 +1,24 @@
+웹디자인 :
+- jpg / png / ico / gif : 구현
+- psd / ai : 제작
+- SVG (*Scalable Vector Graphics)
+=> 용량 매우 경량화
+=> 아무리, 늘리고 & 줄여도 해상도 손실
+
+xml : html5 문법이 나오기 전, 개발자들이 사용했던 html문법 중 하나
+extenXible Markup Language
+
+CSS 비효율적인 코드
+less 스타일시트 
+SASS 스타일시트
+SCSS (*현존하는 CSS 스타일시트 문법 최강자)
+Sassy : 엽기적인 / 어메이징
+
+- 내장 선택자
+- 함수
+- 전.후문자 선택자
+
+웹 브라우저 => 컴파일러!!! (*번역기)
+
+Nesting 문법 : 새 둥지!!!
+부모 > 자식선택자!!!
