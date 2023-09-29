@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web</title>
+  <link rel="stylesheet" href="/01 responsive-01/style.css">
+</head>
+<body>
+  <section>
+    <div class="consulting-header">
+      <h1>
+        퍼블리싱 학습의 새로운 <span>패러다임!</span><br/>
+        신속하게 <span>이젠아카데미 간편 상담</span>을 신청하실 수 있습니다.
+      </h1>
+      <hr>
+      <p>
+        상담 내용에 따라 비용과 절차에 관련하여 전화 또는 이메일로 신속하게 상담해 드립니다.
+      </p>
+    </div>
+    <div class="consulting-form">
+      <form action="#">
+        <div class="row">
+          <div class="field">
+            <label for="name">이름<em>*</em></label>
+            <input id="name" type="text" required placeholder="이름을 입력하세요.">
+          </div>
+          <div class="field">
+            <label for="email">이메일<em>*</em></label>
+            <input id="email" type="email" required placeholder="이메일을 입력하세요.">
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="number">연락처<em>*</em></label>
+            <input id="number" type="tel" required placeholder="연락처를 입력하세요.">
+          </div>
+          <div class="field">
+            <label for="help">상담구분<em>*</em></label>
+            <select name="help" id="help">
+              <option value="#">선택하세요</option>
+              <option value="online">온라인 강의 문의</option>
+              <option value="offline">오프라인 강의 문의</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="contents">상담내용<em>*</em></label>
+            <textarea name="contents" id="contents" rows="5" required placeholder="상담 접수가 이루어진 후 24시간 내 연락드리겠습니다. 감사합니다."></textarea>
+          </div>
+        </div>
+        <div class="policy">
+          <h4>개인정보 취급방침(필수)</h4>
+          <iframe src="/01 responsive-01/policy.html" frameborder="0"></iframe>
+          <div class="agreement">
+            <input type="checkbox" id="chk">
+            <label for="chk">개인정보 취급방침을 읽었으며 이에 동의합니다.</label>
+          </div>
+          <button class="btn-submit">상담신청</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,34 @@
+.linearGradient (@start, @end) {
+  background: @start;
+  background: -webkit-linear-gradient(top, @start 0%, @end 100%);
+}
+
+.button (@width, @height, @radius) {
+  width: @width;
+  height: @height;
+  line-height: @height;
+  text-align: center;
+  border-radius: @radius;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  margin: 10px;
+  float: left;
+  &:first-child {
+    .linearGradient(#0094ff, #004f89);
+    .button(200px, 100px, 10px);
+  }
+  &:nth-child(2) {
+    .linearGradient(#0094ff + #c00, #004f89 + #c00);
+    .button(200px, 100px, 10px);
+  }
+  &:nth-child(3) {
+    .linearGradient(#0094ff + #f00, #004f89 + #f00);
+    .button(200px, 100px, 10px);
+  }
+}

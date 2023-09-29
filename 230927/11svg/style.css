@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 960px;
+  margin: 0 auto;
+}
+#main_section {
+  overflow: hidden;
+}
+#main_article {
+  width: 460px;
+  float: left;
+}
+#map_image {
+  width: 500px;
+  float: right;
+}

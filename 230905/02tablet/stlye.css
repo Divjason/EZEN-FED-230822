@@ -1,0 +1,93 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Header */
+#main_header {
+  height: 60px;
+  line-height: 60px;
+  padding-left: 10px;
+  border-bottom: 1px solid #000;
+  background-color: #1d4088;
+  color: #fff;
+}
+
+/* GNB */
+#main_gnb {
+  overflow: hidden;
+  border-bottom: 1px solid #000;
+  background: #32324a;
+}
+#main_gnb > ul.left {
+  float: left;
+  overflow: hidden;
+}
+#main_gnb > ul.right {
+  float: right;
+  overflow: hidden;
+}
+#main_gnb > ul.left > li {
+  float: left;
+}
+#main_gnb > ul.right > li {
+  float: right;
+}
+#main_gnb a {
+  display: block;
+  padding: 10px 20px;
+  border-left: 1px solid #5f6673;
+  border-right: 1px solid #242a37;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Main */
+#wrap {
+  background: #71b1d1;
+  overflow: hidden;
+}
+#wrap > #main_lnb {
+  float: left;
+  width: 200px;
+}
+#wrap > #content_wrap {
+  float: left;
+  width: 100%;
+  /* width: 99% */
+  margin-right: -200px;
+}
+#main_lnb a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+  border-top: 1px solid #96d6e6;
+  border-bottom: 1px solid #6298b2;
+  color: #fff;
+  font-weight: bold;
+}
+#content {
+  background: #fff;
+  border-left: 1px solid #000;
+}
+article {
+  width: 980px;
+  padding: 20px;
+}
+
+/* Footer */
+#main_footer {
+  padding: 10px;
+  border-top: 3px solid #000;
+  text-align: center;
+}

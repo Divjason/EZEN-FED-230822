@@ -1,0 +1,23 @@
+html
+폰트 두께 조절 태그
+: <b> : 스타일조정 / <strong> : 강조점 : 두꺼워진다
+
+
+폰트 기울기 조절 태그
+: <i> / <em> : 세로로 기울어진다
+
+단락 다음에 <hr /> : 단락과 단락 사이에 선을 넣고 싶은 경우!!!
+
+박스가 생성되어야지만, border
+border-bottom
+
+&::after
+
+div > span .class {
+
+}
+
+div > span .class::after {
+
+}
+

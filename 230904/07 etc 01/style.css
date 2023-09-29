@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+div {
+  font-family: "Noto Sans", sans-serif;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  /* background: #f85032; */
+  background: linear-gradient(
+    to bottom,
+    #f85032 1%,
+    #f16f5c 50%,
+    #f6290c 1%,
+    #e73827 100%
+  );
+  color: #fff;
+}

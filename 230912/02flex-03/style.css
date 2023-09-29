@@ -1,0 +1,26 @@
+#wrap {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  border: 4px solid #000;
+}
+
+#wrap div:first-child {
+  flex-grow: 1;
+  background: #eb4a24;
+  order: 3;
+}
+
+#wrap div:nth-child(2) {
+  flex-grow: 1;
+  background: #1488c8;
+  order: 1;
+}
+
+#wrap div:last-child {
+  flex-grow: 1;
+  background: #f7e041;
+  order: 2;
+}

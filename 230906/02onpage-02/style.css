@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 1px 1px #283744;
+}
+li {
+  list-style: none;
+}
+
+body {
+  background: url("/02onpage-02/img/windmill.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right bottom;
+  background-attachment: fixed;
+}
+nav {
+  width: 100%;
+  height: auto;
+  background-color: #34495e;
+  font-size: 1.2em;
+  font-weight: 400;
+  position: relative;
+}
+nav > ul {
+  display: none;
+  height: auto;
+}
+nav > ul > li {
+  width: 100%;
+  text-align: center;
+  display: block;
+  border-bottom: 1px solid #576979;
+}
+nav > ul > li > a {
+  line-height: 50px;
+}
+nav #trigger {
+  display: block;
+  background-color: #283744;
+  width: 100%;
+  padding-left: 15px;
+  line-height: 40px;
+  position: relative;
+}
+nav a#trigger::after {
+  content: "";
+  display: inline-block;
+  background: url("/02onpage-02/img/nav.png") no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Break Point */
+@media screen and (min-width: 920px) {
+  nav {
+    height: 40px;
+    border-bottom: 2px solid #34495e;
+    background-color: #34495e;
+  }
+  nav > ul {
+    display: block;
+    width: 900px;
+    height: 40px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  nav > ul > li {
+    display: inline-block;
+    width: 150px;
+    border-bottom: 0;
+    border-right: 1px solid #576979;
+    margin-right: -6px;
+    text-align: center;
+  }
+  nav > ul > li:first-child {
+    border-left: 1px solid #576979;
+  }
+  nav > ul > li > a {
+    font-size: 1em;
+    line-height: 40px;
+  }
+  nav a#trigger {
+    display: none;
+  }
+}

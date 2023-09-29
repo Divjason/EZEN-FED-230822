@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 10px;
+  display: grid;
+  grid-template: 70px 1fr 70px / 200px 1fr;
+  grid-gap: 5px;
+  grid-template-areas:
+    "header header"
+    "aside content"
+    "footer footer";
+}
+
+[class*="cell"] {
+  box-sizing: border-box;
+  border: 5px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.cell-header {
+  grid-area: header;
+}
+.cell-aside {
+  grid-area: aside;
+}
+.cell-content {
+  grid-area: content;
+}
+.cell-footer {
+  grid-area: footer;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/11 form tag - 01/style.css" />
+  </head>
+  <body>
+    <fieldset id="first">
+      <legend><strong>신청과목</strong></legend>
+      <div class="box">
+        <form action="">
+          <p>이 달에 신청할 과목을 선택하세요! (*1과목만 가능)</p>
+          <label for="a">
+            <input type="radio" name="subject" id="a" />영어회화
+          </label>
+          <label for="b">
+            <input type="radio" name="subject" id="b" />영어문법
+          </label>
+          <label for="c">
+            <input type="radio" name="subject" id="c" />영어작문
+          </label>
+        </form>
+      </div>
+    </fieldset>
+    <fieldset id="second">
+      <legend><strong>메일링</strong></legend>
+      <div class="box">
+        <form action="">
+          <p>메일로 받고 싶은 뉴스 주제를 선택해주세요! (*복수 선택 가능)</p>
+          <label for="d">
+            <input type="checkbox" name="mailling1" id="d" />해외단신
+          </label>
+          <label for="e">
+            <input type="checkbox" name="mailling2" id="e" />5분회화
+          </label>
+          <label for="f">
+            <input type="checkbox" name="mailling3" id="f" />모닝팝스
+          </label>
+        </form>
+      </div>
+    </fieldset>
+    <form action="">
+      <textarea name="memo" id="memo" cols="50" rows="5">방탄소년단</textarea>
+    </form>
+    <form action="">
+      <select name="food" id="food">
+        <option value="">김밥</option>
+        <option value="">떡볶이</option>
+        <option value="">순대</option>
+        <option value="">오뎅</option>
+      </select>
+    </form>
+    <form action="">
+      <select name="" id="">
+        <optgroup label="HTML5">
+          <option value="">mulumedia</option>
+          <option value="">connect</option>
+          <option value="">device</option>
+        </optgroup>
+        <optgroup label="CSS3">
+          <option value="">animation</option>
+          <option value="">3d transition</option>
+        </optgroup>
+      </select>
+    </form>
+  </body>
+</html>

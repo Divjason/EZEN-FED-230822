@@ -1,0 +1,10 @@
+.two {
+  width: 500px;
+  text-align: center;
+}
+
+.inline {
+  display: inline-block;
+  width: 500px;
+  text-align: center;
+}

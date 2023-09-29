@@ -1,0 +1,20 @@
+git log : 그동안 내가 git을 통해서 commit했던 자료가 어떤것이 있는지 확인하는 명령어!!!
+
+git checkout a5e6f8b7c731378829e4a94a75c1160692ebbda9
+
+git push origin master
+
+git switch -c newroom
+
+git push origin newroom
+
+git commit -m "230914"
+
+*자기소개 페이지
+http://leeboa.com/
+http://seoheee.com/
+https://nykim.net/
+https://findawayer.github.io/
+http://www.rimurang.pe.kr/
+https://minjeongseok.com/
+https://guswjd8694.github.io/dothome2021/portfolio/

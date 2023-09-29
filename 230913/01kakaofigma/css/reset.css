@@ -1,0 +1,20 @@
+@font-face {
+  font-family: kakao;
+  src: url("/font/KakaoBigRegular.ttf"), local("KakaoBigRegular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "kakao";
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
