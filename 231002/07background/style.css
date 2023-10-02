@@ -1,0 +1,7 @@
+body {
+  background: url(/img/bottom-bg.jpg) no-repeat fixed center bottom;
+  height: 2000px;
+}
+h1 {
+  text-align: center;
+}
