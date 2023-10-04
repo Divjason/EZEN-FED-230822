@@ -1,0 +1,10 @@
+.frame {
+  padding: 20px;
+  border: 1px solid #000;
+  text-align: center;
+  @at-root .heading {
+    font-size: 36px;
+    font-weight: normal;
+    color: crimson;
+  }
+}
