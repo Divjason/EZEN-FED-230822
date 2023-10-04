@@ -1,0 +1,12 @@
+#wrapper {
+  width: 96%;
+  margin: 0 auto;
+  font-size: 12px;
+}
+.header-text {
+  font-size: 2em;
+  text-align: center;
+}
+.fluid-text {
+  font-size: 1.5em;
+}

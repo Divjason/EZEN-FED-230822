@@ -1,0 +1,15 @@
+.wrap {
+  display: flex;
+  flex-direction: row;
+}
+p {
+  margin: 0;
+  padding: 0 15px;
+}
+img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: left top;
+  border: 1px solid #f00;
+}

@@ -1,0 +1,21 @@
+.parent {
+  border: 5px solid #0f0;
+  height: 300px;
+  display: flex;
+  align-items: stretch;
+  gap: 5px;
+}
+
+.parent div {
+  width: 300px;
+  text-align: center;
+  font-size: 30px;
+  background: crimson;
+}
+
+.child1 {
+  height: 100px;
+}
+.child3 {
+  height: 200px;
+}
