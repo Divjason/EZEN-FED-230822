@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+
+$font-family: (
+  kor: "Noto Sans KR",
+  eng: "Montserrat",
+);
+$font-color: (
+  primary: #222,
+  secondary: #555,
+);
+$font-size: (
+  base: 15px,
+  large-heading: 60px,
+  medium-heading: 45px,
+  small-heading: 20px,
+);
+$bg-color: (
+  primary: #fff,
+  secondary: #f8f8f8,
+);
+$btn-color: (
+  pc: crimson,
+  mobile: royalblue,
+);
+
+@mixin wavy-underline {
+  text-decoration-style: wavy;
+  text-decoration-color: #e84393;
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 15px;
+}
+@mixin btn-case {
+  color: #fff;
+  font-size: 10px;
+  border-radius: 3px;
+  padding: 2px 8px;
+  text-transform: uppercase;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: map-get($font-family, kor);
+  color: map-get($font-color, primary);
+  font-size: map-get($font-size, base);
+  font-weight: 300;
+  line-height: 1.5em;
+  margin: 0;
+  background: map-get($bg-color, primary);
+}
+
+.portfolio {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  background: url(/02scss/img/03/_02/background.png) no-repeat top center;
+  .headline-share {
+    margin-bottom: 100px;
+    h1 {
+      @include wavy-underline;
+      font-family: map-get($font-family, eng);
+      font-size: map-get($font-size, large-heading);
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+  .items {
+    width: 1280px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    .item {
+      &.thum {
+        .photo {
+          width: 100%;
+          height: 400px;
+          overflow: hidden;
+          border-radius: 15px;
+          box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+          img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+            object-position: top;
+            transition: 2s;
+          }
+        }
+        &:hover img {
+          object-position: bottom;
+        }
+        .portfolio-title {
+          display: block;
+          text-align: center;
+          margin: 7px;
+          font-family: map-get($font-family, eng);
+          .btn-view {
+            @include btn-case;
+            &.pc {
+              background: crimson;
+            }
+            &.mobile {
+              background: royalblue;
+            }
+          }
+        }
+      }
+    }
+    aside.item {
+      b,
+      h2 {
+        font-family: map-get($font-family, eng);
+      }
+      b {
+        font-weight: normal;
+        color: crimson;
+      }
+      h2 {
+        font-size: 1.6em;
+        margin-top: 15px;
+      }
+      .portfolio-info {
+        padding-left: 20px;
+        line-height: 1.8em;
+        span {
+          display: list-item;
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .portfolio {
+    height: auto;
+    padding: 20px;
+    align-content: start;
+    .headline-share {
+      margin-top: 30px;
+      h1 {
+        font-size: map-get($font-size, medium-heading);
+      }
+    }
+    .items {
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      aside.item,
+      .item.thum:nth-of-type(3) {
+        grid-column: span 2;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .portfolio {
+    height: auto;
+    padding: 20px;
+    align-content: start;
+    .headline-share {
+      h1 {
+        font-size: map-get($font-size, small-heading);
+      }
+    }
+    .items {
+      width: 100%;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

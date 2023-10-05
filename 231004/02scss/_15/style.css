@@ -1,0 +1,153 @@
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #222;
+  line-height: 1.6em;
+  background: #f8f8f8;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.portfolio {
+  margin: 15px;
+}
+.portfolio h1 {
+  text-align: center;
+  font-weight: normal;
+  margin: 40px;
+  padding-bottom: 40px;
+  position: relative;
+  font-size: 50px;
+}
+.portfolio h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: crimson;
+}
+.portfolio h1 span {
+  color: crimson;
+}
+.portfolio .items {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 15px;
+}
+.portfolio .items div {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.portfolio .items div a img {
+  width: 100%;
+  display: block;
+}
+.portfolio .items div i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.2);
+  opacity: 0;
+  font-size: 40px;
+  color: #fff;
+}
+.portfolio .items div span {
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+.portfolio .items div:hover i {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+.portfolio .items div:hover span {
+  bottom: 0;
+}
+.portfolio .items div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+}
+.portfolio .items div:hover::before {
+  opacity: 1;
+}
+.portfolio .items div span,
+.portfolio .items div i, .portfolio .items div::before {
+  transition: 0.35s;
+  pointer-events: none;
+}
+.portfolio .items .focus {
+  grid-area: span 2/span 2;
+}
+
+.featherlight .featherlight-content {
+  width: 100%;
+  height: 100%;
+  max-height: 100% !important;
+  margin: 0 !important;
+}
+
+.featherlight .featherlight-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.featherlight .featherlight-close-icon {
+  width: 50px !important;
+  height: 50px !important;
+  line-height: 50px !important;
+  background: crimson !important;
+  font-size: 28px;
+  color: #fff !important;
+  border-radius: 50%;
+  top: 90% !important;
+  left: 30px;
+}
+
+@media all and (min-width: 768px) and (max-width: 1366px) {
+  body {
+    height: auto;
+  }
+  .portfolio h1 {
+    font-size: 40px;
+  }
+  .portfolio .items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media all and (max-width: 767px) {
+  body {
+    height: auto;
+  }
+  .portfolio h1 {
+    font-size: 30px;
+  }
+  .portfolio .items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .portfolio .items .focus {
+    grid-area: span 1/span 1;
+  }
+}
