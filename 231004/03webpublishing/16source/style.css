@@ -1,40 +1,72 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input[name="tabmenu"] {
+  display: none;
+}
+.tabs {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+.items {
+  height: 100vh;
+  width: 300%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.items div {
+  height: 100vh;
+  float: left;
+  width: 33.33%;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
-.loading span {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background: gray;
-  border-radius: 50%;
-  animation: loading 1s linear infinite;
+.items div:nth-child(1) {
+  background: teal;
 }
-.loading span:nth-child(1) {
-  animation-delay: 0s;
-  background: crimson;
-}
-.loading span:nth-child(2) {
-  animation-delay: 0.2s;
+.items div:nth-child(2) {
   background: dodgerblue;
 }
-.loading span:nth-child(3) {
-  animation-delay: 0.4s;
-  background: royalblue;
+.items div:nth-child(3) {
+  background: yellowgreen;
 }
-@keyframes loading {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
+.items div h1 {
+  color: #fff;
+  font-size: 80px;
+  font-weight: normal;
+}
+.btn {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.btn label {
+  display: inline-block;
+  width: 50px;
+  height: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+input[id="tab1"]:checked ~ .tabs .items {
+  left: 0;
+}
+input[id="tab2"]:checked ~ .tabs .items {
+  left: -100%;
+}
+input[id="tab3"]:checked ~ .tabs .items {
+  left: -200%;
+}
+
+input[id="tab1"]:checked ~ .btn label[for="tab1"],
+input[id="tab2"]:checked ~ .btn label[for="tab2"],
+input[id="tab3"]:checked ~ .btn label[for="tab3"] {
+  background: #000;
 }

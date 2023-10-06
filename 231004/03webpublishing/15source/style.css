@@ -3,80 +3,74 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #333;
+  color: #222;
 }
-a {
-  text-decoration: none;
+.tab-inner {
+  height: 500px;
 }
-.container {
-  display: flex;
-  flex-direction: row;
+.tab-inner h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: normal;
 }
-.square {
-  width: 400px;
+input[name="tabmenu"] {
+  display: none;
+}
+.tabs {
+  width: 800px;
   height: 400px;
+  overflow: hidden;
   position: relative;
-  margin: 30px;
 }
-.square span {
+.items {
+  width: 2400px;
+  height: 400px;
   position: absolute;
-  width: inherit;
-  height: inherit;
-  border: 1px solid #fff;
-  border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+  top: 0;
+  left: 0;
   transition: 0.5s;
 }
-.square:nth-child(1):hover span {
-  background: crimson;
-  border: none;
-}
-.square:nth-child(2):hover span {
-  background: dodgerblue;
-  border: none;
-}
-.square:nth-child(3):hover span {
-  background: yellowgreen;
-  border: none;
-}
-.square span:nth-child(1) {
-  animation: circle 6s linear infinite;
-}
-.square span:nth-child(2) {
-  animation: circle 4s linear infinite;
-  animation-direction: reverse;
-}
-.square span:nth-child(3) {
-  animation: circle 10s linear infinite;
-}
-.square:hover span:nth-child(1) {
-  opacity: 0.3;
-}
-.square:hover span:nth-child(2) {
-  opacity: 0.6;
-}
-.square:hover span:nth-child(3) {
-  opacity: 0.8;
-}
-.square div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
+.items div {
+  width: 800px;
+  height: 400px;
+  float: left;
+  box-sizing: border-box;
   text-align: center;
-  color: #fff;
+  padding: 50px;
 }
-.square div a {
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
-  padding: 8px;
+.btn {
+  text-align: center;
 }
-@keyframes circle {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.btn label {
+  width: 10px;
+  height: 10px;
+  background: lightgray;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.items div img {
+  width: 100px;
+  border-radius: 50%;
+}
+.items div p b {
+  display: block;
+}
+.items div p span {
+  color: orange;
+}
+input[id="tab1"]:checked ~ .tabs .items {
+  left: 0;
+}
+input[id="tab2"]:checked ~ .tabs .items {
+  left: -800px;
+}
+input[id="tab3"]:checked ~ .tabs .items {
+  left: -1600px;
+}
+input[id="tab1"]:checked ~ .btn label[for="tab1"],
+input[id="tab2"]:checked ~ .btn label[for="tab2"],
+input[id="tab3"]:checked ~ .btn label[for="tab3"] {
+  background: crimson;
+  border-radius: 50%;
 }

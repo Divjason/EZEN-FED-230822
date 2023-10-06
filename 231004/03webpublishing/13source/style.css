@@ -1,40 +1,56 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+input[id="trigger"] {
+  display: none;
+}
+label[for="trigger"] {
+  /* border: 1px solid #f00; */
+  width: 30px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+label[for="trigger"] span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  transition: 0.3s;
+}
+label[for="trigger"] span:nth-child(1) {
+  top: 0;
+}
+label[for="trigger"] span:nth-child(2) {
+  top: 50%;
+}
+label[for="trigger"] span:nth-child(3) {
+  top: 100%;
+}
+.sidebar {
+  background: #000;
+  width: 300px;
   height: 100vh;
+  position: fixed;
+  right: -300px;
+  transition: 0.3s;
 }
-.loading span {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background: gray;
-  border-radius: 50%;
-  animation: loading 1s linear infinite;
+input[id="trigger"]:checked + label[for="trigger"] span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
 }
-.loading span:nth-child(1) {
-  animation-delay: 0s;
-  background: crimson;
+input[id="trigger"]:checked + label[for="trigger"] span:nth-child(2) {
+  opacity: 0;
 }
-.loading span:nth-child(2) {
-  animation-delay: 0.2s;
-  background: dodgerblue;
+input[id="trigger"]:checked + label[for="trigger"] span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
 }
-.loading span:nth-child(3) {
-  animation-delay: 0.4s;
-  background: royalblue;
+input[id="trigger"]:checked ~ .sidebar {
+  right: 0;
 }
-@keyframes loading {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
+input[id="trigger"]:checked + label[for="trigger"] {
+  right: 310px;
 }

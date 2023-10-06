@@ -1,52 +1,45 @@
 body {
+  background: #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-.loading {
-  width: 30px;
-  height: 30px;
-  position: relative;
+ul,
+li {
+  list-style: none;
 }
-.loading span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  background: gray;
-  animation: loading 1.5s infinite;
-}
-.loading span:nth-child(1) {
-  background: crimson;
-}
-.loading span:nth-child(2) {
-  animation-delay: 0.8s;
+a {
+  text-decoration: none;
+  color: #222;
 }
 
-@keyframes loading {
-  0% {
-    top: 0;
-    left: 0;
-  }
-  25% {
-    top: 0;
-    left: calc(100% - 10px);
-    background: dodgerblue;
-  }
-  50% {
-    top: calc(100% - 10px);
-    left: calc(100% - 10px);
-    background: orange;
-  }
-  75% {
-    top: calc(100% - 10px);
-    left: 0;
-    background: yellowgreen;
-  }
-  100% {
-    top: 0;
-    left: 0;
-  }
+.gnb {
+  width: 600px;
+  display: flex;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  border-radius: 10px;
+}
+.gnb li {
+  flex: 1;
+  text-align: center;
+}
+.gnb li a {
+  font-size: 14px;
+  position: relative;
+}
+.gnb li a::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  background: dodgerblue;
+  width: 0;
+  height: 2px;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.gnb li a:hover::before {
+  width: 100%;
 }

@@ -3,38 +3,46 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: linear-gradient(180deg, #dce35b, #45b649);
 }
-.loading span {
+a {
+  text-decoration: none;
+  color: #222;
+}
+.gnb {
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  border-radius: 10px;
+}
+.gnb a {
   display: inline-block;
-  width: 15px;
-  height: 15px;
-  background: gray;
-  border-radius: 50%;
-  animation: loading 1s linear infinite;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  overflow: hidden;
 }
-.loading span:nth-child(1) {
-  animation-delay: 0s;
-  background: crimson;
+.gnb a::before,
+.gnb a::after {
+  content: attr(data-link);
+  position: absolute;
+  width: 100%;
+  transition: 0.3s;
 }
-.loading span:nth-child(2) {
-  animation-delay: 0.2s;
-  background: dodgerblue;
+.gnb a::before {
+  top: 0;
+  left: 0;
 }
-.loading span:nth-child(3) {
-  animation-delay: 0.4s;
-  background: royalblue;
+.gnb a::after {
+  top: 100%;
+  left: 0;
+  color: #45b649;
 }
-@keyframes loading {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
+.gnb a:hover::before {
+  top: -100%;
+}
+.gnb a:hover::after {
+  top: 0;
 }

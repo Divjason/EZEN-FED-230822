@@ -1,82 +1,78 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #333;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
 }
-.container {
+.gallery {
+  /* border: 1px solid #f00; */
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: row;
+  height: 100vh;
 }
-.square {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  margin: 30px;
-}
-.square span {
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  border: 1px solid #fff;
-  border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+.gallery li {
+  border-right: 5px solid #000;
+  flex: 1;
   transition: 0.5s;
+  position: relative;
+  overflow: hidden;
 }
-.square:nth-child(1):hover span {
-  background: crimson;
-  border: none;
+.gallery li:last-child {
+  border-right: none;
 }
-.square:nth-child(2):hover span {
-  background: dodgerblue;
-  border: none;
+.gallery li:nth-child(1) {
+  background: url(/01/artistic-image-01.jpg) no-repeat center center;
 }
-.square:nth-child(3):hover span {
-  background: yellowgreen;
-  border: none;
+.gallery li:nth-child(2) {
+  background: url(/01/artistic-image-02.jpg) no-repeat center center;
 }
-.square span:nth-child(1) {
-  animation: circle 6s linear infinite;
+.gallery li:nth-child(3) {
+  background: url(/01/artistic-image-03.jpg) no-repeat center center;
 }
-.square span:nth-child(2) {
-  animation: circle 4s linear infinite;
-  animation-direction: reverse;
+.gallery li:nth-child(4) {
+  background: url(/01/artistic-image-04.jpg) no-repeat center center;
 }
-.square span:nth-child(3) {
-  animation: circle 10s linear infinite;
+.gallery li:nth-child(5) {
+  background: url(/01/artistic-image-05.jpg) no-repeat center center;
 }
-.square:hover span:nth-child(1) {
-  opacity: 0.3;
+.gallery:hover li {
+  flex: 1;
 }
-.square:hover span:nth-child(2) {
-  opacity: 0.6;
+.gallery li:hover {
+  flex: 3;
+  filter: grayscale(1);
 }
-.square:hover span:nth-child(3) {
-  opacity: 0.8;
-}
-.square div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
+.content {
+  background: #000;
+  color: #fff;
   text-align: center;
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  bottom: -320px;
+  transition: 0.5s;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+.gallery li:hover .content {
+  transition-delay: 0.5s;
+  bottom: 0;
+}
+.sns a {
   color: #fff;
 }
-.square div a {
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
-  padding: 8px;
-}
-@keyframes circle {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.content::before {
+  content: "";
+  position: absolute;
+  background: #000;
+  width: 100%;
+  height: 60px;
+  left: 0;
+  top: -10px;
+  transform-origin: left bottom;
+  transform: rotate(-3deg) scale(1.3);
 }

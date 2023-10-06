@@ -1,40 +1,39 @@
 body {
+  background: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-.loading span {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background: gray;
-  border-radius: 50%;
-  animation: loading 1s linear infinite;
+
+.app-ui {
+  width: 340px;
+  height: 640px;
+  transform: rotate(-30deg) skewX(20deg) scale(0.7);
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  background: #ddd;
 }
-.loading span:nth-child(1) {
-  animation-delay: 0s;
-  background: crimson;
+.app-ui:hover {
+  box-shadow: -50px 100px 60px rgba(0, 0, 0, 0.3);
 }
-.loading span:nth-child(2) {
-  animation-delay: 0.2s;
-  background: dodgerblue;
+.app-ui img {
+  position: absolute;
+  transition: 0.5s;
 }
-.loading span:nth-child(3) {
-  animation-delay: 0.4s;
-  background: royalblue;
+.app-ui:hover img:nth-child(1) {
+  transform: translate(40px, -40px);
+  opacity: 0.2;
 }
-@keyframes loading {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
+.app-ui:hover img:nth-child(2) {
+  transform: translate(80px, -80px);
+  opacity: 0.4;
+}
+.app-ui:hover img:nth-child(3) {
+  transform: translate(120px, -120px);
+  opacity: 0.6;
+}
+.app-ui:hover img:nth-child(4) {
+  transform: translate(160px, -160px);
 }
