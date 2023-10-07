@@ -1,0 +1,16 @@
+div {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #000;
+}
+.bg1 {
+  background-image: url(/img/bg4.jpg);
+  background-repeat: no-repeat;
+  /* background-size: auto; */
+  /* background-size: 200px 150px; */
+  /* background-size: 60% 40%; */
+  /* background-size: 100% 100%; */
+  /* background-size: contain; */
+  background-size: cover;
+  background-position: center center;
+}

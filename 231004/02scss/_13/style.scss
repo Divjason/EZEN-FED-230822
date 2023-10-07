@@ -1,0 +1,53 @@
+$logo-weight: 500;
+$logo-width: 150px;
+$logo-color: #222;
+
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.figma {
+  // border: 1px solid #f00;
+  width: $logo-width;
+  > span {
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: $logo-weight;
+    color: $logo-color;
+    letter-spacing: 3px;
+    font-size: 16px;
+  }
+  .shape {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    span {
+      background: blue;
+      width: $logo-width / 2;
+      height: $logo-width / 2;
+      &:nth-child(1) {
+        background: #f24e1e;
+        border-radius: 50% 0 0 50%;
+      }
+      &:nth-child(2) {
+        background: #ff7262;
+        border-radius: 0 50% 50% 0;
+      }
+      &:nth-child(3) {
+        background: #a259ff;
+        border-radius: 50% 0 0 50%;
+      }
+      &:nth-child(4) {
+        background: #1abcfe;
+        border-radius: 50%;
+      }
+      &:nth-child(5) {
+        background: #0acf83;
+        border-radius: 50% 0 50% 50%;
+      }
+    }
+  }
+}

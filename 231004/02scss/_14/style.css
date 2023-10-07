@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+}
+.icons li input[name=check-item] {
+  display: none;
+}
+.icons li input[name=check-item]:checked + div {
+  border: none;
+  box-shadow: 0 0 10px rgba(116, 185, 255, 0.5), 0 0 15.015015015px rgba(116, 185, 255, 0.5), 0 0 20px rgba(116, 185, 255, 0.5);
+}
+.icons li input[name=check-item]:checked + div span {
+  text-shadow: 0 0 10px rgba(116, 185, 255, 0.5), 0 0 15.015015015px rgba(116, 185, 255, 0.5), 0 0 20px rgba(116, 185, 255, 0.5);
+}
+.icons li label {
+  cursor: pointer;
+}
+.icons li label div {
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background: #111;
+  border: 3.00030003px solid #222;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.icons li label div span {
+  font-size: 50px;
+  transition: 0.5s;
+}

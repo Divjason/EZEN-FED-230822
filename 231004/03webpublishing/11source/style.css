@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.skill-progress {
+  width: 500px;
+  background: #333;
+  padding: 20px;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+}
+.skill-progress h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: normal;
+}
+.item p {
+  display: flex;
+  justify-content: space-between;
+}
+.progress {
+  border: 1px solid #6cd4c4;
+  padding: 5px;
+  border-radius: 3px;
+}
+.progress-level {
+  height: 10px;
+  background: linear-gradient(to right, #fa709a, #fee140);
+  animation-name: ani;
+  animation-duration: 1s;
+}
+@keyframes ani {
+  0% {
+    width: 0;
+  }
+}

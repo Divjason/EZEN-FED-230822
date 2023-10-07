@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input[name="tabmenu"] {
+  display: none;
+}
+.tabs {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+.items {
+  height: 100vh;
+  width: 300%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.items div {
+  height: 100vh;
+  float: left;
+  width: 33.33%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.items div:nth-child(1) {
+  background: teal;
+}
+.items div:nth-child(2) {
+  background: dodgerblue;
+}
+.items div:nth-child(3) {
+  background: yellowgreen;
+}
+.items div h1 {
+  color: #fff;
+  font-size: 80px;
+  font-weight: normal;
+}
+.btn {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.btn label {
+  display: inline-block;
+  width: 50px;
+  height: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+input[id="tab1"]:checked ~ .tabs .items {
+  left: 0;
+}
+input[id="tab2"]:checked ~ .tabs .items {
+  left: -100%;
+}
+input[id="tab3"]:checked ~ .tabs .items {
+  left: -200%;
+}
+
+input[id="tab1"]:checked ~ .btn label[for="tab1"],
+input[id="tab2"]:checked ~ .btn label[for="tab2"],
+input[id="tab3"]:checked ~ .btn label[for="tab3"] {
+  background: #000;
+}
