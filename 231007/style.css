@@ -1,0 +1,60 @@
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  line-height: 1.5em;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+/* Add Google & Daum Map */
+.map-frame {
+  text-align: center;
+  margin: 50px 0;
+}
+.map-content {
+  /* border: 1px solid red; */
+  width: 800px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  /* Range : 0~1 or 0~100% */
+  /* filter: invert(1);  */
+}
+.map-frame h1 {
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+  /* display: inline-block; */
+}
+.map-frame h1:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100px;
+  background-color: #2ecc71;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+.map-frame iframe {
+  width: 800px;
+  height: 500px;
+}
