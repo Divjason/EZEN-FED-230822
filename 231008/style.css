@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mockup .mobile-mockup {
+  border: 1px solid #eee;
+  border-radius: 30px;
+  width: 430px;
+  height: 850px;
+  position: relative;
+}
+.mockup .mobile-mockup::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 97.5%;
+  height: 98.5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 27px;
+}
+.mockup .mobile-mockup .iframe-url {
+  border: 1px solid #eee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 680px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2em;
+}
+.mockup .mobile-mockup .iframe-url iframe {
+  width: 100%;
+  height: 100%;
+}
+.mockup .mobile-mockup .camera {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 70px;
+}
+.mockup .mobile-mockup .camera span {
+  background: #555;
+  position: absolute;
+}
+.mockup .mobile-mockup .camera span:nth-child(1) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 7px;
+  border-radius: 7px;
+}
+.mockup .mobile-mockup .camera span:nth-child(2) {
+  top: 50%;
+  left: 130px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.mockup .mobile-mockup .camera span:nth-child(3) {
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.mockup .mobile-mockup .home-btn {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 85px;
+}
+.mockup .mobile-mockup .home-btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+.mockup .mobile-mockup .home-btn span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  box-shadow: inset 0 0 5px #606060;
+  border-radius: 50%;
+}
+.mockup .mobile-mockup .power {
+  position: absolute;
+  top: 87px;
+  right: 0;
+}
+.mockup .mobile-mockup .power span {
+  position: absolute;
+  width: 7px;
+  height: 40px;
+  background: #ddd;
+  border-radius: 0 5px 5px 0;
+}
+.mockup .mobile-mockup .volume {
+  position: absolute;
+  top: 87px;
+  right: 100%;
+  width: 7px;
+  height: 150px;
+}
+.mockup .mobile-mockup .volume span {
+  position: absolute;
+  background: #ddd;
+  width: inherit;
+  height: 40px;
+  border-radius: 5px 0 0 5px;
+}
+.mockup .mobile-mockup .volume span:nth-child(1) {
+  top: 0;
+  height: 25px;
+}
+.mockup .mobile-mockup .volume span:nth-child(2) {
+  bottom: 55px;
+}
+.mockup .mobile-mockup .volume span:nth-child(3) {
+  bottom: 0;
+}/*# sourceMappingURL=style.css.map */
