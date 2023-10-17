@@ -13,7 +13,7 @@
 let num = 1;
 function gallery(direct) {
   if (direct) {
-    if (num == 8) return;
+    if (num == 9) return;
     num++;
   } else {
     if (num == 1) return;
