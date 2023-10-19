@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+.parent {
+  border: 1px solid #000;
+  width: 800px;
+  padding: 20px;
+  display: flex;
+}
+.parent div {
+  width: 50%;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  border: 3px solid #f00;
+  font-size: 3em;
+}
+.left {
+  animation: ltr 1s linear both;
+}
+.right {
+  animation: rtl 1s linear both;
+}
+@keyframes ltr {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes rtl {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
