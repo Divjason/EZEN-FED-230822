@@ -1,3 +1,4 @@
+let addBtn = document.querySelector("#add");
 let itemList = [];
 
 let addList = (e) => {
@@ -30,5 +31,5 @@ function removeList() {
   showList();
 }
 
-let addBtn = document.querySelector("#add");
+
 addBtn.addEventListener("click", addList);

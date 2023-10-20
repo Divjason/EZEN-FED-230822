@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 20px;
+}
+form {
+  /* border: 1px solid #f00; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+fieldset {
+  margin-bottom: 35px;
+  border: 1px solid #c0c0c0;
+  padding: 30px 20px;
+}
+.field {
+  display: inline-block;
+  width: 60px;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.input-box {
+  width: 200px;
+}
