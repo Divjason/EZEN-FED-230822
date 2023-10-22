@@ -1,0 +1,16 @@
+.parent {
+  border: 5px solid #0f0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.parent div {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  background: crimson;
+  margin: 5px 0;
+}

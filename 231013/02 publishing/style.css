@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.heading {
+  text-align: center;
+  font-weight: normal;
+  font-size: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+}
+.heading span {
+  color: crimson;
+}
+.login {
+  border: 1px solid #000;
+  width: 500px;
+  padding: 30px;
+  text-align: center;
+}
+.login input[type="text"],
+.login button {
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+.login input[type="text"] {
+  border: 1px solid #ddd;
+}
+.login button {
+  border-radius: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}

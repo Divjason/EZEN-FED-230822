@@ -1,0 +1,20 @@
+fieldset {
+  width: 520px;
+}
+
+#second {
+  margin-top: 30px;
+}
+
+label {
+  margin-right: 20px;
+}
+
+input {
+  margin-right: 10px;
+}
+
+.box {
+  width: 470px;
+  margin: 0 auto;
+}

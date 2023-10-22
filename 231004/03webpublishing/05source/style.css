@@ -1,0 +1,37 @@
+body {
+  color: #222;
+  line-height: 1.5em;
+  font-weight: 300;
+  background: royalblue;
+}
+a {
+  text-decoration: none;
+}
+.gnb {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+}
+.gnb a {
+  color: #fff;
+  font-size: 40px;
+  display: block;
+  margin: 30px 0;
+  transition: 0.5s;
+}
+.gnb:hover a {
+  opacity: 0.3;
+}
+.gnb a:hover {
+  opacity: 1;
+}
+.gnb a::before {
+  content: "\f105";
+  font-family: fontawesome;
+  margin-right: 10px;
+  opacity: 0;
+}
+.gnb a:hover::before {
+  opacity: 1;
+}

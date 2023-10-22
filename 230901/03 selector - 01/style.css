@@ -1,0 +1,15 @@
+p {
+  counter-increment: rint;
+}
+
+p::before {
+  content: counter(rint) ".";
+}
+
+p::after {
+  content: "~"attr(data-page) " page";
+}
+
+p::first-letter {
+  font-size: 3em;
+}

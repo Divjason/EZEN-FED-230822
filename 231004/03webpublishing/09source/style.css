@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.sns {
+  background: #f8f8f8;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.13);
+}
+.sns a {
+  color: #222;
+  text-decoration: none;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 40px;
+  margin: 0 10px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.sns a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background: blue;
+  transition: 0.5s;
+}
+.sns a:hover::before {
+  height: 100%;
+}
+.sns a:nth-child(1)::before {
+  background: #3b5999;
+}
+.sns a:nth-child(2)::before {
+  background: #55acee;
+}
+.sns a:nth-child(3)::before {
+  background: #dd4b39;
+}
+.sns a:nth-child(4)::before {
+  background: #0077b5;
+}
+.sns a:nth-child(5)::before {
+  background: #e4405f;
+}
+.sns a .fab {
+  position: relative;
+  transition: 0.5s;
+}
+.sns a:hover .fab {
+  color: #fff;
+  transform: rotateY(360deg);
+}

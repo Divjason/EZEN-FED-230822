@@ -1,0 +1,28 @@
+#wrap {
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  border: 4px solid #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#wrap div {
+  width: 30%;
+  display: flex;
+}
+#wrap .left div {
+  width: 200%;
+  height: 500px;
+}
+
+#wrap .left div:first-child {
+  background: #eb4a24;
+}
+#wrap .left div:last-child {
+  background: #1488c8;
+}
+#wrap div:last-child {
+  background: #f7e041;
+}

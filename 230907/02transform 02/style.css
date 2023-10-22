@@ -1,0 +1,55 @@
+body {
+  width: 200px;
+  margin: 200px auto;
+  perspective: 1200;
+}
+
+section {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation: rint 3s linear 0s infinite;
+  transform-style: preserve-3d;
+}
+@keyframes rint {
+  from {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+div {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  /* backface-visibility: hidden; */
+}
+
+div:nth-child(1) {
+  transform: rotateY(0deg) translate3d(0, 0, 100px);
+  background: red;
+}
+div:nth-child(2) {
+  transform: rotateY(90deg) translate3d(0, 0, 100px);
+  background: green;
+}
+div:nth-child(3) {
+  transform: rotateY(180deg) translate3d(0, 0, 100px);
+  background: blue;
+}
+div:nth-child(4) {
+  transform: rotateY(270deg) translate3d(0, 0, 100px);
+  background: yellow;
+}
+div:nth-child(5) {
+  transform: rotateX(90deg) translate3d(0, 0, 100px);
+  background: brown;
+}
+div:nth-child(6) {
+  transform: rotateX(270deg) translate3d(0, 0, 100px);
+  background: pink;
+}

@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.item {
+  /* border: 1px solid #f00; */
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.item img {
+  transition: 0.5s;
+}
+.detail {
+  background: #f8f8f8;
+  position: absolute;
+  left: 0;
+  bottom: -177px;
+  width: 100%;
+  height: 250px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item:hover .detail {
+  bottom: 0;
+}
+.item:hover img {
+  filter: blur(2px);
+}
+.title {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.title h2 {
+  font-size: 16px;
+  color: #888;
+  line-height: 1.2em;
+  font-weight: normal;
+}
+.title h2 em {
+  font-style: normal;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #000;
+  font-size: 20px;
+}
+.title .price {
+  color: crimson;
+  font-size: 20px;
+}
+.info {
+  padding: 0 15px 0;
+  padding-right: 130px;
+  position: relative;
+}
+.size {
+  margin-bottom: 10px;
+}
+.size label,
+.color label {
+  display: block;
+  margin-bottom: 5px;
+}
+.size span,
+.color span {
+  transition: 0.3s;
+}
+.size span {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 4px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 15px;
+  padding: 2px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.size span:hover {
+  color: #fff;
+  background: #000;
+}
+.color span {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  margin-right: 6px;
+  cursor: pointer;
+}
+.color span:nth-of-type(1) {
+  background: #808000;
+}
+.color span:nth-of-type(2) {
+  background: #f00;
+}
+.color span:nth-of-type(3) {
+  background: #ffc0cb;
+}
+.color span:nth-of-type(4) {
+  background: #0ff;
+}
+.color span:nth-of-type(5) {
+  background: #00f;
+}
+.color span.active {
+  border-radius: 50%;
+}
+.add-cart {
+  border: 1px solid #ddd;
+  width: 80%;
+  padding: 7px;
+  background: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+  outline: none;
+}
+.add-cart:hover {
+  background: #000;
+  color: #fff;
+}
+.like {
+  cursor: pointer;
+}
+.like::before {
+  content: "\f08a";
+  font-family: fontawesome;
+  color: #bbb;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.like.active::before {
+  content: "\f004";
+  color: crimson;
+}

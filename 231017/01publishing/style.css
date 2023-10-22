@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+section article {
+  /* border: 1px solid #f00; */
+  width: 980px;
+  height: 500px;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.heading span {
+  color: crimson;
+  font-size: 24px;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+.heading h1 {
+  font-size: 34px;
+  font-weight: normal;
+}
+.heading h1 em {
+  font-style: normal;
+  position: relative;
+}
+.heading h1 em::after {
+  content: url(./img/logo-kakao.png);
+  position: absolute;
+  right: -30px;
+  top: -25px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.content > div {
+  width: 50%;
+  height: 400px;
+}
+.title {
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 5px;
+  padding-left: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.title::after {
+  content: "\f105";
+  font-family: fontawesome;
+  float: right;
+  margin-top: 3px;
+  margin-right: 5px;
+  transition: 0.3s;
+}
+.title:hover,
+.title.active {
+  background: #203049;
+  color: #fff;
+}
+.title.active::after {
+  transform: rotate(90deg);
+  color: orange;
+}
+.desc {
+  padding: 15px;
+  display: none;
+}
+.desc.active {
+  display: block;
+}
+.image img {
+  height: 370px;
+}

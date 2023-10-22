@@ -1,0 +1,25 @@
+position : 
+- 목적 : 내가 어떤 contents(text, p, hn...)의 포지션(*위치: x, y 좌표값)을 정의해주려고 사용하는 속성
+
+- 종류 : 4가지 (*static / relative / absolute / fixed)
+1) static : position이라는 속성을 적용하지 않을 때, 기본적으로 적용되는 default(*기본) 값 => 코드를 입력한 순서에 맞춰서 위치를 정의하는 속성
+div1
+div2
+div3
+
+2) relative (*상대위치좌표를 결정하는 속성) : 2가지의 기능 / 첫번째 기능 현재 위치한 본인의 포지션(*위치)를 기준으로 위치를 정의할 수 있는 속성 / 두번째 기능 : 만약 children(*자식)요소의 태그에서 postion 속성을 absolute를 사용했을 때, 기준이 되게끔 할 수 있는 속성
+
+3) absolute (*절대위치좌표를 결정하는 속성) : 웹 브라우저 화면 안에 다른 contents요소 여부와는 전혀상관없이 개발자가 지정해놓은 위치(*포지션)으로 무조건 이동하는 속성
+
+4) Fixed : 사용하는 목적은 스크롤바가 움직이더라도 특정 위치(*포지션)에 해당 contents를 묶어두고자 하는 목적!!!!
+
+json파일 : javascript object notation
+.json => 웹사이트에 담아놓을 데이터!!!
+map(() => i )
+
+1.지금만든 쿠팡 사이트 배포
+- 서버임대 > 호스팅
+- aws / google > firebase
+
+
+2.피그마

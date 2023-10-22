@@ -1,0 +1,137 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Header */
+#main_header {
+  height: 45px;
+  background: url("/01mobile/img/header_background.png");
+  text-align: center;
+  line-height: 45px;
+  position: relative;
+}
+#main_header > a,
+#main_header > label {
+  position: absolute;
+  display: block;
+  height: 32px;
+}
+#main_header > a {
+  width: 62px;
+  left: 5px;
+  top: 7px;
+  background: url("/01mobile/img/css_sprites.png");
+  background-position: 0 0;
+  text-indent: -999px;
+}
+#main_header > h1 {
+  color: #fff;
+}
+#main_header > label {
+  width: 32px;
+  right: 5px;
+  top: 7px;
+  background: url("/01mobile/img/css_sprites.png");
+  background-position: -62px, 0;
+  text-indent: -9999px;
+}
+
+/* Toggle */
+#toggle {
+  display: none;
+}
+#toggle + #wrap > #toggle_gnb_wrap {
+  display: none;
+}
+#toggle:checked + #wrap > #toggle_gnb_wrap {
+  display: block;
+}
+#toggle_gnb_wrap {
+  background: #363636;
+  padding: 15px;
+}
+#toggle_gnb {
+  background: #fff;
+  padding: 5px;
+  text-align: center;
+}
+#toggle_gnb > ul {
+  overflow: hidden;
+  text-align: center;
+  width: 650px;
+  margin: 0 auto;
+}
+#toggle_gnb > ul > li {
+  width: 80px;
+  float: left;
+}
+
+/* Top GNB */
+#top_gnb {
+  overflow: hidden;
+  background: #b42111;
+  border-bottom: 1px solid #000;
+}
+#top_gnb > div > a {
+  float: left;
+  width: 25%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+}
+/* Bottom GNB */
+#bottom_gnb {
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+#bottom_gnb > div {
+  display: table-cell;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+#bottom_gnb > div > a {
+  display: inline-block;
+  width: 15%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+#bottom_gnb > div > a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: -1px;
+  width: 1px;
+  height: 15px;
+  border-left: 1px solid #000;
+}
+
+/* Main CSS */
+#section_header {
+  padding: 20px;
+}
+#section_article {
+  padding: 10px;
+}
+
+/* Footer CSS */
+#main_footer {
+  padding: 10px;
+  border-top: 3px solid #000;
+  text-align: center;
+}

@@ -1,0 +1,17 @@
+div {
+  margin: 10px;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+div:first-child {
+  background-color: #f00;
+  box-sizing: content-box;
+}
+
+div:nth-child(2) {
+  background-color: orange;
+  box-sizing: border-box;
+}

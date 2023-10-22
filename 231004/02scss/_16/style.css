@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Noto Sans KR";
+  color: #222;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5em;
+  margin: 0;
+  background: #fff;
+}
+
+.portfolio {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  background: url(/02scss/img/03/_02/background.png) no-repeat top center;
+}
+.portfolio .headline-share {
+  margin-bottom: 100px;
+}
+.portfolio .headline-share h1 {
+  text-decoration-style: wavy;
+  text-decoration-color: #e84393;
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 15px;
+  font-family: "Montserrat";
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.portfolio .items {
+  width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+.portfolio .items .item.thum .photo {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+.portfolio .items .item.thum .photo img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  transition: 2s;
+}
+.portfolio .items .item.thum:hover img {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.portfolio .items .item.thum .portfolio-title {
+  display: block;
+  text-align: center;
+  margin: 7px;
+  font-family: "Montserrat";
+}
+.portfolio .items .item.thum .portfolio-title .btn-view {
+  color: #fff;
+  font-size: 10px;
+  border-radius: 3px;
+  padding: 2px 8px;
+  text-transform: uppercase;
+}
+.portfolio .items .item.thum .portfolio-title .btn-view.pc {
+  background: crimson;
+}
+.portfolio .items .item.thum .portfolio-title .btn-view.mobile {
+  background: royalblue;
+}
+.portfolio .items aside.item b,
+.portfolio .items aside.item h2 {
+  font-family: "Montserrat";
+}
+.portfolio .items aside.item b {
+  font-weight: normal;
+  color: crimson;
+}
+.portfolio .items aside.item h2 {
+  font-size: 1.6em;
+  margin-top: 15px;
+}
+.portfolio .items aside.item .portfolio-info {
+  padding-left: 20px;
+  line-height: 1.8em;
+}
+.portfolio .items aside.item .portfolio-info span {
+  display: list-item;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .portfolio {
+    height: auto;
+    padding: 20px;
+    align-content: start;
+  }
+  .portfolio .headline-share {
+    margin-top: 30px;
+  }
+  .portfolio .headline-share h1 {
+    font-size: 45px;
+  }
+  .portfolio .items {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio .items aside.item,
+  .portfolio .items .item.thum:nth-of-type(3) {
+    grid-column: span 2;
+  }
+}
+@media all and (max-width: 768px) {
+  .portfolio {
+    height: auto;
+    padding: 20px;
+    align-content: start;
+  }
+  .portfolio .headline-share h1 {
+    font-size: 20px;
+  }
+  .portfolio .items {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
