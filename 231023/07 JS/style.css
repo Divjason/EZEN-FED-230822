@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+#box {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #222;
+  border-radius: 10px;
+}
