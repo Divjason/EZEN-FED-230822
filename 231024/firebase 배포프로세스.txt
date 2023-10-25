@@ -1,0 +1,93 @@
+자바스크립트 문법!!!
+1.웹 브라우저 :
+- html / css / JS
+- html : 마크업 언어 (*구조 / 뼈대)
+- css : 스타일 언어 (*스타일링)
+- 사용자 참여 제한
+- 해결 : JS (*웹 브라우저에 사용자가 직접 참여할 수 있도록 하기 위해서 고안된 프로그래밍 언어)
+
+JS :
+변수 = 자료를 담는 바구니 역할
+- 자료형구조 : 문자열 / 숫자 / 논리형 / 객체...
+
+조건식 & 반복문
+
+객체 = 자료와 관련된 데이터를 함께 묶어서 보관.관리할 수 있는 데이터자료구조 유형 (*데이터를 처리할 수 있는 기본 단위)
+기능 구현x = 함수
+
+클래스 / 화살표 / 내장함수
+
+객체를 직접 만들어고 사용 => 사용자 정의 객체
+
+원시타입 복사!!!!
+- 부시맨!!! => 원시인
+- 아프리카인 => 도심!!
+
+참조주소 복사!!!!
+
+배포!!! = deploy
+=> 제작 완료된 웹페이지를 호스팅
+=> 호스팅 : 서버에서 내가 만든 웹페이지의 데이터를 업로드하는 행위
+=> 서버 & 호스팅
+=> 서버 x
+
+
+http://127.0.0.1:5500/
+가상 서버 : 로컬 컴퓨터 기반으로
+vs code 를 종료하는 순간!!!
+
+- dotHome : 쌈마이
+> 기간 : 호스팅 (*기간종료)
+> 문자 : 유료결제
+
+- cafe24 : 재작년에 N 인수
+> 1달간 무료 => 유료
+
+- netlify : github를 서버로 사용!!
+- 데이터 업로드
+- 호스팅!!!
+- github => 서버 목적
+- 개발자들 코드 공유목적
+- 용량제한!!!
+
+- 기간 눈치안보고, 글로벌적이며, 호스팅!!
+=> firebase
+
+1.google > firebase 검색
+
+2.firebase 시작하기
+
+3.firebase 프로젝트 추가
+
+4.firebase 프로젝트 이름 등록 > 프로젝트 만들기
+
+5.제품카테고리 > 빌드 > Hosting > 시작하기
+cmd (*관리자권한) > npm install -g firebase-tools
+
+6.vscode로 들어와서 터미널 오픈 (*` + ctrl)
+- command prompt 터미널 변경
+
+7.firebase login 진행
+- firebase login
+
+8.firebase init 진행
+- firebase init
+- Are you ready to proceed? : y
+- Which Firebase features do you : 
+Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys : 선택(스페이스바)
+- Use an existing project (*방금 만들어놨던 프로젝트 선택 후 엔터)
+- What do want to use (*public)
+- Single as a (*No)
+-Git-Hub (*No)
+
+9.배포준비완료!!
+(*Firebase initialization complete!)
+
+10.탐색기 > public 폴더 생성된것 확인!
+- 해당 public 폴더 에 배포하고 싶은 소스코드 및 컨텐츠 (*이미지 혹은 동영상) 붙여넣기!!!
+
+11.배포명령어 작성
+firebase deploy
+
+12.
+https://flexible01-video-project.web.app/
