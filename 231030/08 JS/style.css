@@ -1,0 +1,79 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Layout CSS */
+figure {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(25deg, violet, pink);
+  overflow: hidden;
+  position: relative;
+}
+figure h1 {
+  position: absolute;
+  top: 7vh;
+  left: 4vw;
+  font-size: 0;
+}
+figure h1 strong {
+  font-size: 36px;
+  color: #fff;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+figure h1 span {
+  font-size: 12px;
+  color: #fff;
+  opacity: 0.8;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+figure .menu {
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  top: 8vh;
+  right: 4vw;
+}
+figure > p {
+  position: absolute;
+  bottom: 7vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font: normal 12px/1 "arial";
+  letter-spacing: 2px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+/* Player CSS */
+figure section {
+  border: 1px solid aqua;
+  width: 20vw;
+  height: 65vh;
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  margin-top: -25vh;
+  margin-left: -10vw;
+  transition: 1s;
+}
+figure section article {
+  border: 1px solid aqua;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
