@@ -1,0 +1,21 @@
+#container {
+  width: 500px;
+  margin: 20px auto;
+}
+h1 {
+  font-size: 1.5em;
+}
+table,
+td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+td {
+  padding: 5px 10px;
+  font-size: 1.5em;
+}
+#result td:last-child {
+  background: #000;
+  color: #fff;
+}
