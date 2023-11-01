@@ -1,0 +1,17 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+button {
+  width: 200px;
+  padding: 20px;
+  font-size: 1.2em;
+}
+#result {
+  padding: 20px;
+  font-size: 2.5em;
+  color: #f00;
+}

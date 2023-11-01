@@ -1,0 +1,16 @@
+#container {
+  width: 400px;
+  margin: 20px auto;
+}
+hr {
+  width: 100%;
+  border: 1px dotted #222;
+}
+ul,
+li {
+  list-style: none;
+}
+li {
+  font-size: 1em;
+  line-height: 2;
+}
