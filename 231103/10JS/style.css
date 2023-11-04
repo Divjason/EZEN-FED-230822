@@ -1,0 +1,18 @@
+table {
+  display: inline-block;
+  width: 300px;
+  margin: 10px;
+}
+table,
+th,
+td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+th {
+  width: 80px;
+}
+td {
+  width: 210px;
+  padding: 10px 20px;
+}

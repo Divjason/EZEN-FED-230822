@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#sky {
+  background: url("../images/bg1.png") center center;
+  background-size: cover;
+  width: 100%;
+  height: 2000px;
+  position: relative;
+}
+#sky article {
+  position: absolute;
+  top: 750px;
+  left: 45%;
+}

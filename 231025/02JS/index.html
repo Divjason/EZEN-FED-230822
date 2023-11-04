@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>내가 살아온 시간</h1>
+      <form action="/life_process" method="post">
+        <label for="year"><input id="year" type="text" />년</label>
+        <label for="month"><input id="month" type="text" />월</label>
+        <label for="date"><input id="date" type="text" />일</label>
+        <input id="btn" type="submit" value="계산" />
+      </form>
+      <div id="result">
+        <p id="current"></p>
+        <p id="hours" class="accent"></p>
+        <p id="days" class="accent"></p>
+        <p id="years" class="accent"></p>
+      </div>
+    </div>
+  </body>
+</html>
