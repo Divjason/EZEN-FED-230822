@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  width: 200vw;
+  transition: transform 0.5s ease;
+}
+
+.page {
+  flex: 1;
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.page:nth-child(1) {
+  background-color: #f2f2f2;
+}
+
+.page:nth-child(2) {
+  background-color: #ccc;
+}
+
+.button-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
