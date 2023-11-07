@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./game.css" />
+    <script defer src="./game.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -20,19 +21,14 @@
         <div class="game_title">끝말잇기</div>
         <div class="game_subtitle">제시어 : <span id="word">산기슭</span></div>
         <div class="word_text">
-          <form action="/process_word" method="post">
+          <form>
             <input
               id="myword"
               class="textbox"
               type="text"
               placeholder="단어를 입력하세요"
             />
-            <input
-              class="search"
-              type="submit"
-              value="입력"
-              onclick="startWord()"
-            />
+            <input class="search" type="submit" value="입력" />
           </form>
         </div>
         <div id="result" class="word_result">결과!</div>
