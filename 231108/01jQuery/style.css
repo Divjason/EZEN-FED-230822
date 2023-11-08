@@ -1,0 +1,8 @@
+#gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+img {
+  width: 400px;
+}
