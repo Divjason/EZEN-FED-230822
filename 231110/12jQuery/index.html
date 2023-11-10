@@ -15,17 +15,15 @@
     <script defer src="./script.js"></script>
   </head>
   <body>
-    <div id="outer_wrap">
-      <section id="inner_1">
-        <p class="txt1">내용1</p>
-        <p class="txt2">내용2</p>
-      </section>
-      <section id="inner_2">
-        <p>index1</p>
-        <p>index2</p>
-        <p>index3</p>
-        <p>index4</p>
-      </section>
-    </div>
+    <form action="process_login" method="get">
+      <p>
+        <label for="user_name">이름</label>
+        <input id="user_name" name="user_name" type="text" value="park" />
+      </p>
+      <p>
+        <label for="user_id">아이디</label>
+        <input id="user_id" name="user_id" type="text" value="hello" />
+      </p>
+    </form>
   </body>
 </html>
