@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+button {
+  background: #ddd;
+  padding: 1em 3em;
+  border: 1px solid #222;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px #222;
+}
+#noti-box {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+.noti {
+  background: #eee;
+  margin: 1em;
+  padding: 1em;
+  border-left: 3px solid #222;
+}

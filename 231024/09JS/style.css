@@ -1,0 +1,44 @@
+body {
+  background: #000;
+}
+#wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.clock {
+  width: 400px;
+  height: 400px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  position: relative;
+}
+.lineHour {
+  width: 10px;
+  height: 150px;
+  background: #fff;
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 5px);
+  transform-origin: bottom;
+}
+.lineMin {
+  width: 4px;
+  height: 200px;
+  background: #fff;
+  position: absolute;
+  top: calc(50% - 200px);
+  left: calc(50% - 2px);
+  transform-origin: bottom;
+}
+.lineSec {
+  width: 2px;
+  height: 200px;
+  background: #fff;
+  position: absolute;
+  top: calc(50% - 200px);
+  left: calc(50% - 1px);
+  transform-origin: bottom;
+}

@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Common CSS */
+body {
+  background: #efefef;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Header CSS */
+header {
+  width: 400px;
+  height: 100%;
+  background: linear-gradient(45deg, aqua, royalblue);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header h1 {
+  font: bold 50px/1 "orbitron";
+  color: #fff;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-150%);
+}
+header h1::before {
+  content: "UI/UX DEVELOPMENT";
+  display: block;
+  color: #fff;
+  font: 14px/1 "orbitron";
+  letter-spacing: 2px;
+  position: absolute;
+  top: 140px;
+  left: 0;
+  opacity: 0.8;
+}
+header h1::after {
+  content: "";
+  display: block;
+  background: #fff;
+  width: 150px;
+  height: 2px;
+  margin-top: 20px;
+}
+header ul {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  padding: 0 10px;
+}
+header ul li a {
+  color: #fff;
+  font-size: 20px;
+}
+header ul li a span {
+  display: inline-block;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+/* Main CSS */
+main {
+  margin-left: 400px;
+  padding: 20px;
+}
+main section {
+  width: 100%;
+}
+main section article {
+  width: 20%;
+  float: left;
+  padding: 12px;
+}
+main section article div {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 14px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+main section article div img {
+  width: 100%;
+}
+main section article div h2 {
+  color: #444;
+  font: bold 11px/1 "orbitron";
+  margin: 15px 0 5px;
+  letter-spacing: 1px;
+}
+main section article div p {
+  color: #777;
+  font: normal 10px/1.2 "arial";
+  margin-bottom: 15px;
+}
+
+/* Main ul/li */
+main ul {
+  width: 100%;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+main ul li {
+  float: right;
+  margin-right: 20px;
+  width: 100px;
+  height: 26px;
+}
+main ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font: bold 16px/26px "orbitron";
+  color: #aaa;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+}
+main ul li.on a {
+  background: linear-gradient(45deg, #67faf3, #58abf8);
+  color: #fff;
+  box-shadow: 0 5px 20px rgba(0, 255, 255, 0.5);
+}
+
+/* 1600px */
+@media screen and (max-width: 1599px) {
+  header {
+    width: 350px;
+  }
+  main {
+    margin-left: 350px;
+  }
+  main section article {
+    width: 25%;
+  }
+}
+
+/* 1200px */
+@media screen and (max-width: 1199px) {
+  header {
+    width: 100%;
+    height: 80px;
+    position: relative;
+  }
+  header h1 {
+    font: bold 24px/1 "orbitron";
+    transform: translateY(-50%);
+  }
+  header h1::before {
+    display: none;
+  }
+  header ul {
+    width: 20%;
+    left: 83%;
+    bottom: 25px;
+    justify-content: center;
+    gap: 20px;
+  }
+  header ul li {
+    margin-right: 5px;
+  }
+  header ul li a {
+    font-size: 20px;
+  }
+  header ul li a span {
+    display: none;
+  }
+  main {
+    margin-left: 0;
+    width: 100%;
+  }
+  main section article {
+    width: 25%;
+  }
+}
+
+/* 900px */
+@media screen and (max-width: 899px) {
+  header ul {
+    left: 80%;
+  }
+  main section article {
+    width: 33.33%;
+  }
+}
+
+/* 680px */
+@media screen and (max-width: 679px) {
+  header ul {
+    left: 78%;
+  }
+  main section article {
+    width: 50%;
+  }
+}
+
+/* 540px */
+@media screen and (max-width: 539px) {
+  header ul {
+    display: none;
+  }
+  main ul {
+    margin-right: 0;
+    padding: 0 13px;
+  }
+  main ul li {
+    margin-right: 2%;
+    width: 32%;
+  }
+  main ul li:nth-of-type(1) {
+    margin-right: 0;
+  }
+  main section article {
+    width: 100%;
+  }
+}

@@ -1,9 +1,25 @@
+<<<<<<< HEAD
 // 전개연산자 or 전개구문
+=======
+// const hello = (name, message = "안녕하세요!") => {
+//   console.log(`${name}님, ${message}`);
+// };
+
+// const addNum = (a, b) => {
+//   let sum = 0;
+//   sum += a;
+//   sum += b;
+//   return sum;
+// };
+
+// 전개구문
+>>>>>>> 8c28332bef531262fad579d85edb95782ea971c0
 const addNum = (...numbers) => {
   let sum = 0;
   for (let number of numbers) {
     sum += number;
   }
+<<<<<<< HEAD
   return sum;
 };
 
@@ -76,3 +92,8 @@ let makeUser = (name, age) => {
 
 let user1 = makeUser('슛돌이', 20);
 console.log(user1);
+=======
+
+  return sum;
+};
+>>>>>>> 8c28332bef531262fad579d85edb95782ea971c0

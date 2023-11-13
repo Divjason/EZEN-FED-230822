@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <h1>원기둥 부피 구하기</h1>
+    <p>원기둥의 지름과 높이가 주어졌을 때, 부피를 구하는 프로그램 개발</p>
+    <div id="container">
+      <div id="userInput">
+        <form action="/circle" method="get">
+          <ul>
+            <li>
+              <label for="cyl-diameter">지름</label>
+              <input id="cyl-diameter" type="text" />
+            </li>
+            <li>
+              <label for="cyl-height">높이</label>
+              <input id="cyl-height" type="text" />
+            </li>
+            <li>
+              <input id="btn" type="submit" value="계산하기" />
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>

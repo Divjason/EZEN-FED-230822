@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div id="contents">
+      <img src="./img/images.png" alt="sales" />
+      <ul>
+        <li>
+          <label for="oPrice">원래가격</label>
+          <input type="text" id="oPrice" /> 원
+        </li>
+        <li>
+          <label for="rate">할인률</label>
+          <input type="text" id="rate" /> %
+        </li>
+        <li>
+          <button onclick="showPrice()">할인가격 계산하기</button>
+        </li>
+      </ul>
+    </div>
+    <div id="showResult"></div>
+  </body>
+</html>

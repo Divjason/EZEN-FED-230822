@@ -1,0 +1,13 @@
+{
+  "images": [
+    {
+      "path": "./img/1.JPG",
+      "caption": "Images1",
+      "info": "아이유씨의 초기 데뷔이미지입니다."
+    },
+    { "path": "./img/2.JPG", "caption": "Images2" },
+    { "path": "./img/3.JPG", "caption": "Images3" },
+    { "path": "./img/4.JPG", "caption": "Images4" },
+    { "path": "./img/5.JPG", "caption": "Images5" }
+  ]
+}

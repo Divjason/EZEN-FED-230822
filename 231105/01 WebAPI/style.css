@@ -42,9 +42,22 @@ form input {
   padding: 0.5em 1em;
   border-bottom: 1px dotted #ccc;
 }
+<<<<<<< HEAD
 .complete-button {
+=======
+.todo button {
+>>>>>>> 8c28332bef531262fad579d85edb95782ea971c0
   padding: 0.5em;
   font-size: 0.8em;
   cursor: pointer;
   margin-right: 0.2em;
 }
+<<<<<<< HEAD
+=======
+
+.completed {
+  text-decoration: line-through;
+  color: #d8d8d8;
+  opacity: 0.5;
+}
+>>>>>>> 8c28332bef531262fad579d85edb95782ea971c0

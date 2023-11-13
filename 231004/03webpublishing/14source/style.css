@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+.tab-inner {
+  /* border: 1px solid #f00; */
+  width: 300px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+input[name="tabmenu"] {
+  display: none;
+}
+.content {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.btn {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 10px;
+}
+.btn label {
+  background: lightgray;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+input[id="tab1"]:checked ~ .slide1,
+input[id="tab2"]:checked ~ .slide2,
+input[id="tab3"]:checked ~ .slide3 {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+input[id="tab1"]:checked ~ .btn label[for="tab1"],
+input[id="tab2"]:checked ~ .btn label[for="tab2"],
+input[id="tab3"]:checked ~ .btn label[for="tab3"] {
+  background: crimson;
+}
+
+input[id="tab1"]:checked ~ .heading .text1,
+input[id="tab2"]:checked ~ .heading .text2,
+input[id="tab3"]:checked ~ .heading .text3 {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+.text1,
+.text2,
+.text3 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: crimson;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 15px;
+  box-sizing: border-box;
+  transform: translateY(-50px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.text1 span,
+.text2 span,
+.text3 span {
+  font-size: 20px;
+  display: block;
+  margin-top: 5px;
+}
+.text2 {
+  background: dodgerblue;
+}
+.text3 {
+  background: yellowgreen;
+}

@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  padding-top: 110px;
+  background: #000;
+  overflow: hidden;
+  @at-root .path {
+    fill: none;
+    stroke: #f2f2f2;
+    stroke-width: 3px;
+    &.path1 {
+      stroke-dasharray: 6884;
+      animation: drawPath1 1s linear, floating 2.2s linear infinite;
+    }
+  }
+}
+@keyframes drawPath1 {
+  0% {
+    stroke-dashoffset: 6884;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes floating {
+  50% {
+    transform: translate(0, 40px);
+  }
+}
+.content1 {
+  background: #f1f1f1
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.25),
+      transparent 1px,
+      rgba(255, 255, 255, 0.25) 1px,
+      transparent 7px
+    )
+    2px;
+  .path2 {
+    stroke: #000;
+  }
+}
+.content2 {
+  background: #000;
+}
+.content3 {
+  background: #1a1a1a;
+}
+.footer {
+  height: 30vh;
+  background: #000;
+}

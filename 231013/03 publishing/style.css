@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.star-rating {
+  width: 300px;
+  background: #333;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.stars .fas {
+  cursor: pointer;
+  font-size: 18px;
+}
+.stars .fas.active {
+  color: yellow;
+  text-shadow: 0 0 5px yellow;
+}
+.print {
+  color: #fff;
+}
+.print img {
+  vertical-align: middle;
+  margin-right: 5px;
+}

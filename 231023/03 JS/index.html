@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <form name="testForm">
+      <fieldset>
+        <legend>신청과목</legend>
+        <p>이 달에 신청할 과목을 선택하세요</p>
+        <label><input type="radio" name="subject" value="speaking">회화</input></label>
+        <label><input type="radio" name="subject" value="grammar">문법</input></label>
+        <label><input type="radio" name="subject" value="writing">작문</input></label>
+      </fieldset>
+      <fieldset>
+        <legend>메일링</legend>
+        <p>메일로 받고 싶은 뉴스 주제를 선택해 주세요</p>
+        <label><input type="checkbox" id="news" name="mailing" value="news">해외단신</input></label>
+        <label><input type="checkbox" id="dialog" name="mailing" value="dialog">5분 회화</input></label>
+        <label><input type="checkbox" id="pops" name="mailing" value="pops">모닝팝스</input></label>
+      </fieldset>
+    </form>
+  </body>
+</html>

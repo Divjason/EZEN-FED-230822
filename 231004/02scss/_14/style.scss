@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+$icon-box-size: 100px;
+$icon-color: #74b9ff;
+
+.icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  li {
+    input[name="check-item"] {
+      display: none;
+      &:checked + div {
+        border: none;
+        box-shadow: 0 0 ($icon-box-size / 10) transparentize($icon-color, 0.5),
+          0 0 ($icon-box-size / 6.66) transparentize($icon-color, 0.5),
+          0 0 ($icon-box-size / 5) transparentize($icon-color, 0.5);
+      }
+      &:checked + div span {
+        text-shadow: 0 0 ($icon-box-size / 10) transparentize($icon-color, 0.5),
+          0 0 ($icon-box-size / 6.66) transparentize($icon-color, 0.5),
+          0 0 ($icon-box-size / 5) transparentize($icon-color, 0.5);
+      }
+    }
+    label {
+      cursor: pointer;
+      div {
+        color: #fff;
+        width: $icon-box-size;
+        height: $icon-box-size;
+        border-radius: $icon-box-size / 10;
+        background: #111;
+        border: ($icon-box-size / 33.33) solid #222;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        span {
+          font-size: $icon-box-size / 2;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
