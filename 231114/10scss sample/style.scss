@@ -1,0 +1,41 @@
+// &는 언제, 어떤 목적으로 사용하는가?
+
+// 1) before, after 등의 가상클래스 혹은 전.후문자 선택자를 사용해야 하는 경우, 굳이 중복해서 선택자를 입력하지 않고, 부모요소의 선택자를 명시적으로 사용하기 위한 목적
+
+// 2) 클래스의 성격이 비슷한 요소가 복수로 존재할 때, 부모요소의 동일한 클래스명을 &로 대체하고자 할 때
+
+// 3) 동일한 클래스 스타일 외에 각각 독립적인 스타일을 적용시켜주고 싶을 때
+
+div {
+  width: 300px;
+  button {
+    color: #f00;
+    &::before {
+      content: '';
+    }
+  }
+}
+
+.font {
+  &-large {
+    color: #f00;
+  }
+  &-medium {
+    background: #0f0;
+  }
+  &-small {
+    padding: 10px;
+  }
+}
+
+.btn {
+  padding: 10px 20px;
+  text-align: center;
+  width: 100px;
+  &.confirm {
+    background: green;
+  }
+  &.warning {
+    background: #f00;
+  }
+}

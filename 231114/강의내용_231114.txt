@@ -1,0 +1,23 @@
+https://ezencomgn.cafe24.com/
+
+1.html, css, scss, jquery, JS
+- jquery 이벤트, DOM 조작
+- JS 영역 기본 문법
+- 동적인 웹페이지 개발 / API / 약함
+- 애니메이션 / API 
+
+** 동적인 웹페이지 개발
+=> 퍼블리셔 진영 (*집중)
+=> anime.js GSAP.js : 플러그인을 중심
+=> vue.js (*UI 영역을 보다 쉽게 컨트롤)
+& React
+
+** 프론트엔드 개발
+=> TS
+=> React
+
+
+8시간 수업
+- 오전 4시간 : 프론트엔드 개발
+- 오후 3시간 : 퍼블리셔 진영
+- 오후 1시간 : 개인포트폴리오
