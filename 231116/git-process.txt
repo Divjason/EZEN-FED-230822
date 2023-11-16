@@ -1,0 +1,83 @@
+*git & git-hub를 활용한 시뮬레이션!!
+
+1.PM이 팀원들과 함께 공유할 새폴더
+(*gittest > 오늘날짜 = 루트폴더)
+
+2.git-hub에 가서 팀원들과 함께 공유할 레포지토리 생성!
+
+3.지금방금 신규로 생성한 레포지토리 & 나의 로컬컴퓨터 git과
+연동이 필요!!!
+
+4.나의 로컬컴퓨터 git 환경설정 필요
+git config --global user.name "Divjason"
+git config --global user.email "sejinpark@tcocs.com"
+git config --list (*정상적으로 환경설정이 되었는지 확인가능!)
+
+5.나의 로컬 컴퓨터 git 초기화
+git init(*내가 공유하고자 하는 폴더 안에 숨김표시가 되어있는 .git 폴더 생성)
+
+6.나의 로컬 컴퓨터 git과 git-hub 레포지토리가 서로 연결고리x
+- 서로간의 연결고리를 만들어주자!!
+git remote add origin https://github.com/Divjason/teamproject.git
+- 나의 git과 git-hub가 정상적으로 연결되었는지 확인
+git remote -v
+
+7.숨어있던 .git 폴더에 git-hub로 전달하고 싶은 데이터를 담아야한다!
+git add . (*현재 나의 루트 폴더 안에 있는 모든 데이터를 레포지토리로 전달)
+
+8..git이라는 폴더에 정상적으로 담겨있는지 확인하기 위한 작업
+git status
+
+9..git에 있는 데이터를 git-hub에 보낼때에는 반드시 어떠한 이름으로 보낼 것인지를 꼭 결정해야한다. (*데이터를 보낸다 = 커밋한다)
+- why? git은 데이터를 보관.관리하기 위한 목적!!!
+- 훗날 나중에 어떤날에 누가올린 데이터인지를 어떻게 알까?
+git commit -m "231116"
+
+10.지금까지 커밋을 하기위한 작업들을 마지막으로 git-hub로 보내고 싶을 때
+git push origin master
+
+11.PM이 업로드한 데이터를 받아와서 작업을 해야한다!!!
+최초(*처음으로) git-hub 레포지토리의 데이터를 받아올 때
+git clone git@github.com:Divjason/teamproject.git
+
+12.PM이 만든 레포지토리에 접근이 불가!!!
+fatal: Could not read from remote repository. 
+git@github.com: Permission denied (publickey).
+
+13.git-hub에 접속에서 데이터를 받아오기 위해서 ssh-key 인증!!!
+ssh-keygen
+C:\Users\sejin/.ssh/id_rsa
+(*기본적으로 git-hub는 접근하고자하는 레파지토리에 ssh키 인증을 받은 사람만 접속하게 되어있음)
+
+14.팀원이 만든 본인의 폴더에 git 초기화!!!
+git init
+
+15.팀원입장에서는 PM이 만들어놓은 레포지토리와 연동!!!!
+git remote add origin https://github.com/Divjason/teamproject.git
+git remote -v
+
+15_1.팀원이 데이터를 클론했을 때, 이미 해당 폴더안에 .git이 존재한다
+-> 따라 .git이 있는 폴더에가서 아래 명령문을 입력!!!
+
+16.팀원이 전달한 파일 .git에 담아!!
+git add .
+
+17..git에 정상적으로 담겨있는지 확인!
+git status
+
+18.git-hub에 커밋할 차례!!!
+git commit -m "nakyoung" (*서로간의 약속)
+
+19.git-hub에 파일을 업로드할 때에는
+git push origin master (*3명 팀원 / 서로 각자가 다른 파일을 만들어 관리!!)
+팀원은 별도의 브랜치에 데이터를 업로드해줘야!!!
+
+20.커밋하고자 하는 장소를 master가 아닌 브랜치로 재설정!!!
+git checkout -b nakyoung
+
+20_1. 레파지토리와 해당 로컬 폴더의 연결고리를 만들어주자!!
+git pull origin nakyoung --allow-unrelated-histories
+
+21.데이터를 커밋!!!
+git pull origin nakyoung
+git push origin nakyoung
