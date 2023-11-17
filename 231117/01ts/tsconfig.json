@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    // "module": "CommonJS",
+    "outDir": "dist",
+    "strict": false,
+    "moduleDetection": "force",
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": { "*": ["src/*"] },
+    "sourceMap": true,
+    "downlevelIteration": true,
+    "noImplicitAny": true,
+    "allowJs": true,
+    "strictPropertyInitialization": false
+  },
+  "ts-node": {
+    "esm": false
+  },
+  "include": ["src"]
+}
