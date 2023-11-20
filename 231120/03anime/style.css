@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+svg {
+  width: 1024px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+/* stroke role */
+.svg1 {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  transform: translate(-48.4%, -48.4%);
+  z-index: 1;
+}
+/* .svg1 path {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+} */
+/* background role */
+.svg2 {
+  fill: rgba(118, 75, 162, 0.7);
+  transform: translate(-49%, -49%);
+  z-index: 0;
+}

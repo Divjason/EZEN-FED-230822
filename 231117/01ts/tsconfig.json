@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    // "module": "CommonJS",
+    "module": "ESNext",
     "outDir": "dist",
     "strict": false,
     "moduleDetection": "force",
@@ -13,10 +13,12 @@
     "downlevelIteration": true,
     "noImplicitAny": true,
     "allowJs": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
     "strictPropertyInitialization": false
   },
   "ts-node": {
-    "esm": false
+    "esm": true
   },
   "include": ["src"]
 }
