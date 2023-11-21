@@ -1,0 +1,1 @@
+{"version":3,"file":"function-call.js","sourceRoot":"","sources":["../src/function-call.ts"],"names":[],"mappings":"AAAA,IAAI,kBAAkB,GAAG,UAAU,CAAS,EAAE,CAAS;IACrD,OAAO,CAAC,GAAG,CAAC,CAAC;AACf,CAAC,CAAC;AAEF,IAAI,KAAK,GAAG,kBAAkB,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC;AACrC,OAAO,CAAC,GAAG,CAAC,KAAK,CAAC,CAAC"}

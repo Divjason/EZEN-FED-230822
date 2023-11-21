@@ -1,6 +1,29 @@
 const Body = document.querySelector('body');
 const Nav_btn = document.querySelector('#nav_icon');
 
+// section2 slider
+const s_Icons = document.querySelectorAll('.slide_icons');
+const s_Left = document.querySelector('.slide_btn.left');
+const s_Right = document.querySelector('.slide_btn.right');
+const Bg = document.querySelector('#sec2');
+const s_Slider = document.querySelectorAll('.sec2_slider li');
+
+s_Icons.forEach((li) => {
+  li.addEventListener('click', (e) => {
+    let target = e.target.dataset.index;
+    console.log(target);
+    if (li.tagName === 'LI') {
+      for (let i = 0; i < s_Icons.length; i++) {
+        if (target == i) {
+          s_Slider[i].classList.add('on');
+          s_Icons[i].classList.add('active');
+          Bg.style.backgroundImage = `url(./img/sec2_bg_${[i]}.png)`;
+        }
+      }
+    }
+  });
+});
+
 Nav_btn.addEventListener('click', () => {
   Body.classList.toggle('nav_active');
 });
@@ -19,7 +42,32 @@ const sec0 = () => {
   });
 };
 const sec1 = () => {
-  console.log('sec1');
+  let tl = anime.timeline({
+    easing: 'linear',
+    duration: 500,
+  });
+  tl.add({
+    targets: '.g01',
+    height: '80%',
+  })
+    .add({
+      targets: '.g02',
+      height: '70%',
+    })
+    .add({
+      targets: '.g03',
+      height: '80%',
+    })
+    .add({
+      targets: '.g04',
+      height: '85%',
+    });
+};
+const sec1_reset = () => {
+  anime({
+    targets: '.gage_in',
+    height: '0%',
+  });
 };
 const sec2 = () => {
   console.log('sec2');
@@ -43,6 +91,9 @@ new fullpage('#fullpage', {
     }
     if (new_elem.index === 1) {
       sec1();
+    }
+    if (old_elem.index === 1) {
+      sec1_reset();
     }
     if (new_elem.index === 2) {
       sec2();
