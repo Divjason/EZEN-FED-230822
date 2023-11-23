@@ -2,16 +2,24 @@ const Body = document.querySelector('body');
 const Nav_btn = document.querySelector('#nav_icon');
 
 // section2 slider
-const s_Icons = document.querySelectorAll('.slide_icons');
+const s_Icons = document.querySelectorAll('.slide_icons li');
 const s_Left = document.querySelector('.slide_btn.left');
 const s_Right = document.querySelector('.slide_btn.right');
 const Bg = document.querySelector('#sec2');
 const s_Slider = document.querySelectorAll('.sec2_slider li');
 
+const s_reset = () => {
+  s_Slider.forEach((elem, idx) => {
+    s_Slider[idx].classList.remove('on');
+    s_Icons[idx].classList.remove('active');
+  });
+};
+
 s_Icons.forEach((li) => {
   li.addEventListener('click', (e) => {
     let target = e.target.dataset.index;
     console.log(target);
+    s_reset();
     if (li.tagName === 'LI') {
       for (let i = 0; i < s_Icons.length; i++) {
         if (target == i) {
@@ -23,6 +31,38 @@ s_Icons.forEach((li) => {
     }
   });
 });
+
+const next = (e) => {
+  e.preventDefault();
+  let crtSlide = document.querySelector('.sec2_slider li.on');
+  let i = crtSlide.dataset.index;
+  s_reset();
+  i++;
+  if (i >= s_Slider.length) {
+    i = 0;
+  }
+  s_Slider[i].classList.add('on');
+  s_Icons[i].classList.add('active');
+  Bg.style.backgroundImage = `url(./img/sec2_bg_${[i]}.png)`;
+};
+
+s_Right.addEventListener('click', next);
+
+const prev = (e) => {
+  e.preventDefault();
+  let crtSlide = document.querySelector('.sec2_slider li.on');
+  let i = crtSlide.dataset.index;
+  s_reset();
+  i--;
+  if (i < 0) {
+    i = s_Slider.length - 1;
+  }
+  s_Slider[i].classList.add('on');
+  s_Icons[i].classList.add('active');
+  Bg.style.backgroundImage = `url(./img/sec2_bg_${[i]}.png)`;
+};
+
+s_Left.addEventListener('click', prev);
 
 Nav_btn.addEventListener('click', () => {
   Body.classList.toggle('nav_active');
@@ -70,7 +110,19 @@ const sec1_reset = () => {
   });
 };
 const sec2 = () => {
-  console.log('sec2');
+  let tl = anime.timeline({
+    duration: 500,
+    easing: 'linear',
+  });
+  tl.add({
+    targets: '#sec2 h1',
+    opacity: 1,
+    translateY: 50,
+  }).add({
+    targets: '.slider_wrap',
+    opacity: 1,
+    translateY: 50,
+  });
 };
 const sec3 = () => {
   const d0 =

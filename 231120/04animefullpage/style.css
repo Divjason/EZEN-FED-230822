@@ -156,12 +156,18 @@ body.nav_active nav {
   background: url(./img/sec2_bg_0.png) center center/cover no-repeat;
   transition: all 0.2s;
 }
+#sec2 h1 {
+  opacity: 0;
+  transform: translateY(-50px);
+}
 .slider_wrap {
   width: 50vw;
   max-width: 700px;
   height: 35vw;
   max-height: 550px;
   margin-left: 50px;
+  opacity: 0;
+  transform: translateY(-50px);
 }
 .sec2_slider {
   /* border: 1px solid #f00; */
@@ -225,6 +231,7 @@ body.nav_active nav {
   text-indent: -9999px;
   border-radius: 5px;
   transition: width 0.3s ease-in-out;
+  cursor: pointer;
 }
 .slide_icons li.active {
   width: 20px;
@@ -296,4 +303,16 @@ h1 {
 }
 .inner h1 img {
   width: 400px;
+}
+
+@media screen and (max-width: 999px) {
+  .inner {
+    width: 100vw;
+  }
+  #sec2 .inner {
+    flex-direction: column;
+  }
+  .slider_wrap {
+    margin: 30px 0 0;
+  }
 }
