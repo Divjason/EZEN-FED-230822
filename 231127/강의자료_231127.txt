@@ -1,0 +1,78 @@
+*리액트 프로젝트 신규세팅 시, 지워도 되는 것들!!!
+
+1) src/App.test.js
+2) src/logo.svg
+3) src/reportWebVitals.js
+4) src/setupTest.js
+
+=> 상기 파일 삭제 후 index.js 파일 안에 reportWebVitals.js의 흔적 모두 지우기!!!
+(*해당 파일 import 지우기, 함수실행문 지우기)
+
+*리액트 프로젝트 세팅 시, 유의사항!!!!
+- 폴더명은 절대로 react 불가!!!!
+(*react 01 x)
+- 절대로 대문자안됨!!!
+React02 x /  react02 O
+- 한글인식못함!!!!
+오후 오전x / 
+
+*리액트가 컴포넌트 기반인것 알겠음!!!
+- 모든것을 잘게 부숴놓은 모듈로서 움직이는 것도 알겠음!!
+- 그렇다면, 컴포넌트 사이에는 서로간에 데이터를 주고받을 수 없을까?
+- 가능함!!! (*단, 부모에서 자식한테는 줄 수 있음 / 하지만, 자식은 부모한테 줄 수 없음!!!)
+
+*개인 최종 프로젝트 : 일정 체크 x
+- 각자 생각하는 라이프 사이클 계획
+(*요청을 하시는 분 일정 체크 / 타임라인)
+- 마지막 1시간 ~ 2시간
+
+*커리큘럼
+- TS : 50%
+- React : Main + TS : 그래도 해볼만한 라이브러리
+(*웹 퍼블리셔)
+- Node.js : 웹 서버 구현 (*퍼블리셔)
+- UI 기능들 : parralex & gsap & vue.js
+- JS API : 중간중간마다 (*React)
+
+*TS
+- 비동기처리방식 : TS
+- 제네릭타입
+- 대수타입 //
+
+*JS 비동기처리
+
+- 함수형프로그래밍을 위한 모나드, 람다 함수
+- 고차함수
+- TS 활용한 앱페이지
+
+*오전 TS(4시간) / 오후 React(2시간) + UI(2시간)
+
+*React :  JS로 UI를 컨트롤할 수 있는 라이브러리!!!
+- 효율적인 코드관리!!! (*Component)
+- 가상돔!!! (*Vitual DOM)
+- 선언형 프로그래밍 방식 <-> 명령형 (*매번 유사한 명령어)
+- CSR : Client Side Rendering <-> SSR : Server Side Rendering
+
+**React : 내년 중반, React
+- 5년여시간, 단점 발견!!!
+- SEO 매우 약함 (*Search Engined Optimized) = 노출최적화검색
+- 네이버, 구글, 카카오 등등 포털검색사이트 => 노출!!!
+
+***JS 라이브러리 약 3년전, 2년전 => *flutter > React
+- 국내 보수 : flutter / 내년본격 / 내후년
+- flutter VS React 기반으로한 Framework (*SSR구동) => Next.js
+- 회사 실무자 => 2~3년을 주기로 계속 새롭게 등장하는 라이브러리와 프레임워크를 공부할 확률 100%
+
+*프론트엔드 묘미!!!!
+**TS / JS 타입의 한계
+***TS + React : 압도적 강력함 커플!!!
+
+- npx create-react-app .
+- npx create-react-app . --template typescript
+> js 파일은 그 어디에도 없다!!!
+
+
+
+
+
+
