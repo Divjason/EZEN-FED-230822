@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+    150deg,
+    #13f0cf,
+    #6d016d,
+    #220340,
+    #220340,
+    #000000
+  );
+  overflow-x: hidden;
+}
+.depthWrap {
+  position: fixed;
+  bottom: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px dashed #fff;
+  padding-bottom: 10px;
+}
+.innerWrap {
+  position: relative;
+  padding: 40px;
+  z-index: 100;
+}
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 70px;
+  color: #fff;
+}
+.textWrap {
+  padding: 500px 0;
+}
+.textWrap p {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+.textWrap img {
+  width: 100%;
+}
+.progressWrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #2d9c9a;
+}
+.bar {
+  width: 0%;
+  height: inherit;
+  position: absolute;
+  background: #fff;
+  z-index: 120;
+  transition: width 0.4s ease-out;
+}
+.submarine {
+  position: fixed;
+  top: 5%;
+  width: 120px;
+  transition: all 0.3s ease-out;
+  z-index: 200;
+}
+.octopus {
+  position: fixed;
+  right: 0;
+  bottom: -150px;
+  width: 300px;
+  opacity: 0.4;
+  transition: all 2s ease-out;
+  z-index: 1;
+}
