@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1100;
+}
+header.fixed {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.8);
+}
+.headerWrap {
+  position: relative;
+  padding: 10px 20px;
+}
+.headerWrap h1 {
+  color: #fff;
+  font-size: 15px;
+}
+header.fixed .headerWrap h1 {
+  color: #000;
+}
+.progressWrap {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #d0d0d0;
+  display: none;
+}
+header.fixed .progressWrap {
+  display: block;
+}
+.bar {
+  width: 0%;
+  height: inherit;
+  z-index: 100;
+  position: absolute;
+  background: #000;
+  transition: width 0.4s ease-out;
+}
+.coverWrap {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 800px; */
+  background: #000 url(./img/bg.jpg) center center/cover no-repeat;
+}
+.dimd {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  background: rgba(0, 0, 0, 0.4);
+}
+.coverTitle {
+  text-align: center;
+  position: relative;
+  z-index: 100;
+}
+.coverTitle h1 {
+  color: #fff;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+.coverTitle p {
+  color: #cecece;
+}
+.contWrap {
+  position: relative;
+  z-index: 1000;
+  background: #fff;
+}
+.contentInnerWrap {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 30px;
+}
+h4 {
+  font-size: 20px;
+}
