@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+}
+#log {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+}
