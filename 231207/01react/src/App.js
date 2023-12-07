@@ -9,19 +9,19 @@ import Edit from './pages/Edit';
 const mockData = [
   {
     id: 'mock1',
-    date: new Date().getTime() - 1,
+    date: new Date('2023/12/02/10:00:00').getTime(),
     content: 'mock1',
     emotionId: 1,
   },
   {
     id: 'mock2',
-    date: new Date().getTime() - 2,
+    date: new Date('2023/12/03/15:00:00').getTime(),
     content: 'mock2',
     emotionId: 2,
   },
   {
     id: 'mock3',
-    date: new Date().getTime() - 3,
+    date: new Date('2023/12/05/18:00:00').getTime(),
     content: 'mock3',
     emotionId: 3,
   },
@@ -68,7 +68,7 @@ function App() {
       type: 'CREATE',
       data: {
         id: idRef.current,
-        date: new Date(date).getTime(),
+        date: new Date().getTime(),
         content,
         emotionId,
       },
@@ -80,7 +80,7 @@ function App() {
       type: 'UPDATE',
       data: {
         id: targetId,
-        date: new Date(date).getTime(),
+        date: new Date().getTime(),
         content,
         emotionId,
       },

@@ -17,6 +17,12 @@ const Viewer = ({ emotionId, content }) => {
           <div className="emotion_description">{emotionItem.name}</div>
         </div>
       </section>
+      <section>
+        <h4>오늘의 일기</h4>
+        <div className="content_wrapper">
+          <p>{content}</p>
+        </div>
+      </section>
     </div>
   );
 };

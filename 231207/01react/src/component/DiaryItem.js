@@ -13,7 +13,8 @@ const DiaryItem = ({ id, emotionId, content, date }) => {
     navigate(`/edit/${id}`);
   };
   const emotionStyle = ['img_section', `img_section_${emotionId}`];
-  const diaryDate = new Date(parseInt(date));
+  // const today = new Date().getTime();
+  const diaryDate = new Date(date);
   const editedContent = content.slice(0, 25);
   return (
     <div className="DiaryItem">
@@ -31,4 +32,4 @@ const DiaryItem = ({ id, emotionId, content, date }) => {
   );
 };
 
-export default DiaryItem;
+export default React.memo(DiaryItem);
