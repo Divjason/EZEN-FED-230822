@@ -1,0 +1,31 @@
+
+2회 / 
+JS > 내장함수 > 비동기처리 함수
+setInterval 류 함수
+forEach / for of / for in 반복
+iterable 객체 / generator 객체
+비동기 : promise / async
+
+JS : ToDoList (*오늘할일)
+
+JS 변수를 선언할 때 : var / let / const
+변수명 작명 :
+- 숫자, 특수문자 맨앞에 올 수 없음!!
+- $(*JS => jQuery, $)
+- 카멜표기법 / 스네이크표기법 / 헝가리언표기법
+- numSum / num_sum / Func
+
+JS는 태생적으로 동기 처리 방식으로 진행되는 프로그래밍 언어!!!
+
+동기 처리 방식 : 한 번에 하나의 코드를 실행!!
+문제점 : 다수의 실행문을 동시에 처리해야하는 경우!!
+
+비동기 처리 방식 : 
+1) 시간 함수 (*set~~~~)
+2) 함수 안에 또다른 함수를 넣는 방법
+= 콜백함수!!!
+3) JS 비동기 Promise 약속 => 성공 실행 약속 / 실패 실행 약속
+
+git-hub > EZEN-FED-230822 > 
+231022폴더 > contents > 영상 4개 다운로드!
+

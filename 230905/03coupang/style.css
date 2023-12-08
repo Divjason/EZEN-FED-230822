@@ -1,0 +1,218 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Common */
+body {
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Header */
+#main_header {
+  position: relative;
+}
+#main_header > h1.logo {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+#main_header > div.login_menu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+/* Aside */
+#global_aside {
+  position: absolute;
+  left: 990px;
+  top: 100px;
+  width: 90px;
+}
+#global_aside > a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Top GNB */
+#top_gnb {
+  overflow: hidden;
+  position: absolute;
+  top: 100px;
+}
+#top_gnb > div.menu {
+  float: left;
+  width: 140px;
+  height: 50px;
+  background: url("/03coupang/img/top/css_sprites_top.png");
+}
+#top_gnb > div.item_1 {
+  background-position: 0 0;
+}
+#top_gnb > div.item_2 {
+  background-position: 0 -50px;
+}
+#top_gnb > div.item_3 {
+  background-position: 0 -100px;
+}
+#top_gnb > div.item_4 {
+  background-position: 0 -150px;
+}
+#top_gnb > div.item_5 {
+  background-position: 0 -200px;
+}
+#top_gnb > div.item_6 {
+  background-position: 0 -250px;
+}
+#top_gnb > div.item_7 {
+  background-position: 0 -300px;
+}
+#top_gnb > div.item_1:hover {
+  background-position: 0 -350px;
+}
+#top_gnb > div.item_2:hover {
+  background-position: 0 -400px;
+}
+#top_gnb > div.item_3:hover {
+  background-position: 0 -450px;
+}
+#top_gnb > div.item_4:hover {
+  background-position: 0 -500px;
+}
+#top_gnb > div.item_5:hover {
+  background-position: 0 -550px;
+}
+#top_gnb > div.item_6:hover {
+  background-position: 0 -600px;
+}
+#top_gnb > div.item_7:hover {
+  background-position: 0 -650px;
+}
+#top_gnb > div.item_1.active {
+  background-position: 0 -350px;
+}
+
+/* Bottom GNB */
+#bottom_gnb {
+  overflow: hidden;
+  top: 150px;
+  position: absolute;
+}
+#bottom_gnb > div.menu {
+  float: left;
+  width: 98px;
+  height: 80px;
+  background: url("/03coupang/img/bottom/css_sprites-bottom.png");
+}
+#bottom_gnb > div.item_1 {
+  background-position: 0 0;
+}
+#bottom_gnb > div.item_2 {
+  background-position: 0 -80px;
+}
+#bottom_gnb > div.item_3 {
+  background-position: 0 -160px;
+}
+#bottom_gnb > div.item_4 {
+  background-position: 0 -240px;
+}
+#bottom_gnb > div.item_5 {
+  background-position: 0 -320px;
+}
+#bottom_gnb > div.item_6 {
+  background-position: 0 -400px;
+}
+#bottom_gnb > div.item_7 {
+  background-position: 0 -480px;
+}
+#bottom_gnb > div.item_8 {
+  background-position: 0 -560px;
+}
+#bottom_gnb > div.item_9 {
+  background-position: 0 -640px;
+}
+#bottom_gnb > div.item_10 {
+  background-position: 0 -720px;
+}
+#bottom_gnb > div.item_1:hover {
+  background-position: 0 -800px;
+}
+#bottom_gnb > div.item_2:hover {
+  background-position: 0 -880px;
+}
+#bottom_gnb > div.item_3:hover {
+  background-position: 0 -960px;
+}
+#bottom_gnb > div.item_4:hover {
+  background-position: 0 -1040px;
+}
+#bottom_gnb > div.item_5:hover {
+  background-position: 0 -1120px;
+}
+#bottom_gnb > div.item_6:hover {
+  background-position: 0 -1200px;
+}
+#bottom_gnb > div.item_7:hover {
+  background-position: 0 -1280px;
+}
+#bottom_gnb > div.item_8:hover {
+  background-position: 0 -1360px;
+}
+#bottom_gnb > div.item_9:hover {
+  background-position: 0 -1440px;
+}
+#bottom_gnb > div.item_10:hover {
+  background-position: 0 -1520px;
+}
+#bottom_gnb > div.item_9.active {
+  background-position: 0 -1440px;
+}
+
+/* Content */
+#detail_list {
+  overflow: hidden;
+  padding: 10px;
+  background: #3d414d;
+  padding-bottom: 15px;
+  position: absolute;
+  top: 230px;
+}
+#detail_list > ul {
+  float: left;
+  width: 192px;
+}
+#detail_list > ul > li {
+  height: 13px;
+  margin: 20px;
+  padding: 3px 5px;
+  color: #f3f3f3;
+}
+#detail_list > ul > li.header {
+  color: #48c5ff;
+  font-weight: bold;
+}
+
+/* Ad */
+#content {
+  position: absolute;
+  top: 600px;
+}
+#product_section {
+  overflow: hidden;
+}
+#product_section > #product_article {
+  float: left;
+  width: 795px;
+}

@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #295500;
+}
+#result {
+  color: #fff;
+  padding: 20px;
+}
+.quote {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.author {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-left: 1rem;
+}

@@ -1,0 +1,30 @@
+.layout {
+  border: 5px solid #0f0;
+  width: 500px;
+}
+.parent {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+
+.parent div {
+  flex-basis: 300px;
+  height: 200px;
+  color: #fff;
+  text-align: center;
+  line-height: 200px;
+  font-size: 30px;
+  background: crimson;
+  margin: 5px 0;
+}
+
+.child1 {
+  flex-shrink: 1;
+}
+.child2 {
+  flex-shrink: 2;
+}
+.child3 {
+  flex-shrink: 1;
+}

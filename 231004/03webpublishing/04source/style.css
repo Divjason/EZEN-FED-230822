@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.icon {
+  width: 125px;
+  height: 125px;
+  margin: 10px;
+  position: relative;
+}
+.icon span {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  color: #fff;
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.icon span::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  background: #000;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg) translate(-50%);
+}
+.icon:hover span {
+  opacity: 1;
+  visibility: visible;
+}

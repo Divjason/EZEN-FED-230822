@@ -1,0 +1,12 @@
+body {
+  background-color: #0094ff;
+}
+div {
+  background-color: #fff;
+  padding: 15px;
+  width: 90%;
+  border: 1px solid #000;
+}
+p {
+  line-height: 30px;
+}

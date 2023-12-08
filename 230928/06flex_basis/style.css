@@ -1,0 +1,27 @@
+.parent {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5px;
+  border: 5px solid #0f0;
+}
+
+.parent div {
+  height: 200px;
+  color: #fff;
+  text-align: center;
+  line-height: 200px;
+  font-size: 30px;
+  background: crimson;
+  margin: 5px 0;
+  flex-grow: 1;
+}
+
+.child1 {
+  flex-basis: 100px;
+}
+.child2 {
+  flex-basis: 200px;
+}
+.child3 {
+  flex-basis: 300px;
+}

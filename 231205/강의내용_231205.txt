@@ -1,0 +1,111 @@
+1.index.js => strictmode 삭제하지 않아도 리액트 앱을 구동하는데 아무 문제가 없다!!! => 콘솔창에 메세지를 출력해라!!!
+
+2.리액트는 앱을 개발하는 것과 앱을 배포하는 것이 2개로 구분이 되어있음
+
+3.리액트로 프로젝트 작업을 다 마친이후에는 반드시 사용해야 하는 명령어가 있음
+*개발자모드 작업
+**배포용모드 작업
+
+리액트 훅!!! 중점!!!
+오늘을 기점, 리액트 훅 쉬운 개념!!!!
+핵심 : 라우팅 기능 / 파라미터 부분!!!!
+궁금증?!!!!
+- 서울시 강남 <-> 제주 (*전화)
+(*전화걸릴 것이다!!!)
+- 라우팅 기술!!!!
+- 강남(전화) => 서울 SKT(지역 / 권역별 기지국) => 경기 SKT (지역 / 권역별 기지국) => 충청 => 전라 > 경상 => 해남 => 제주권
+(*고품질)
+- 라우터
+
+- 파이어베이스 웹 호스팅 : Single Page Application
+(*웹페이지를 만드는데 있어서 20페이지)
+(*html 20개 반드시)
+
+리액트 : 100페이지 / index.html 1개!!!
+Single Page Application
+라우터기능활용해서 페이지를 분기시킨다!!!
+
+http://localhost:3000/main
+http://localhost:3000/sub
+http://localhost:3000/detail
+http://localhost:3000/login
+http://localhost:3000/signup
+
+그동안 작업했던 웹페이지는 SSR방식으로 구동!!!
+리액트 CSR방식으로 구동!!!
+
+라우팅 / 라우터
+리액트 > 라우터!!!! 사용~!!!
+npm 라우터 설치~!!!
+
+npm i react-router-dom
+라우터를 사용하는 방법
+
+https://sports.news.naver.com/index.nhn
+
+https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=nike
+
+path = "/"
+/
+
+json / js => [ ] / 프론트엔드 개발자
+json 구축 운영 json => 로우레벨
+
+만약에 일기를 5개 작성!!!
+작성한 일기는 
+http://localhost:3000/diary/1
+http://localhost:3000/diary/2
+http://localhost:3000/diary/3
+http://localhost:3000/diary/4
+http://localhost:3000/diary/5
+http://localhost:3000/diary/{id}
+{id} => URL 파라미터
+http://www.handm.com/products/women
+http://www.handm.com/products/men
+http://www.handm.com/products/kids
+
+프론트엔트 > 채용공고!!!
+Rest API / 페이지 라우팅 경험 유
+
+=> 쿼리스트링
+
+1) URL 파라미터 : 공통 경로 내 특정 섹션을 구분지어주고 싶을 때!!!
+http://localhost:3000/diary/1
+=> 각 파라미터값을 보유하고 있는 해당 페이지의 속성값을 찾아올 수 있다는 이야기!!!
+useParams( )
+
+2) 쿼리 스트링 : 특정 요소를 클라이언트가 검색하고, 그 검색쿼리값을 서버측에 전달하고자 할 때
+http://localhost:3000/diary?sort=latest&page=1
+useSearchParams( )
+http://localhost:3000?sort=latest
+
+*페이지를 하나 기획!!!
+=> 공통으로 자주 사용되는 것들은 css 변수 지정!!!
+=> 값을 찾아와서 사용하는 방식
+
+*앞으로 공통으로 사용될 것으로 판단되는 요소들은 컴포넌트화 & util.js 모아놓을 것입니다!!!!!
+
+*버튼이라는 것이 완성되려면?
+1) 버튼안에 입력될 텍스트
+2) 버튼 배경색상 스타일
+3) 눌려졌을 때, 어떤 이벤트를 작동시킬 것인가에 정의
+
+*최초 일기장를 만든다!!!
+- 날짜 / 감정 / 일기내용 / 작성완료
+
+**일기를 수정하고 싶다 => 수정하기 버튼!!!
+- 날짜 / 감정 / 일기내용 / 작성완료
+
+=> 1) 초기데이터 유.무 / 2) 일기 작성 및 편집 후 버튼클릭했을때의 방향성 (*신규일기 생성 / 기존일기 데이터 수정)
+
+
+useNavigate( ) : 특정 페이지로 이동하게 만들어주는 리액트 훅 함수!!!!! / 조건식에 부합할 때, 어떤 페이지로 이동하게 하고 싶을 때
+
+<Link> : 경로를 설정하고, 해당 컴포넌트를 클릭했을 때, 설정된 경로 이동하게 해주는 컴포넌트 / 조건식과 상관없이 그냥 일방통행으로 어떤 페이지로 직행하도록 하고 싶을 때 (*a 태그)
+
+["test","firsttest"].join(" ")
+<div class="test firsttest">테스트01</div>
+<div class="test secondtest">테스트02</div>
+
+
+

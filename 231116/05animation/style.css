@@ -1,0 +1,22 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.circle1 {
+  background: burlywood;
+}
+.circle2 {
+  background: mediumaquamarine;
+}

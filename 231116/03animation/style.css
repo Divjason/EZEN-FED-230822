@@ -1,0 +1,16 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+ul.menu li {
+  width: 100px;
+  height: 100px;
+  background: blueviolet;
+  margin-bottom: 20px;
+}

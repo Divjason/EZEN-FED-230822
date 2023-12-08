@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+p {
+  margin: 15px 0;
+}
+form {
+  width: 400px;
+  padding: 10px;
+}
+label {
+  display: none;
+}
+input {
+  width: 100%;
+  margin: 10px;
+  padding: 5px;
+}
+button {
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #222;
+  margin: 3px 0;
+  margin-left: 10px;
+}

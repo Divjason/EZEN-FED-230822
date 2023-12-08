@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#wrapper {
+  width: 960px;
+  margin: 20px auto;
+}
+header {
+  width: 960px;
+  height: 120px;
+  background: #066cfa;
+  border-bottom: 1px solid #000;
+}
+.header-text {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  line-height: 120px;
+}
+.content {
+  float: left;
+  width: 630px;
+  height: 400px;
+  padding: 15px;
+  background: #ffd800;
+}
+.right-side {
+  float: right;
+  width: 330px;
+  height: 400px;
+  padding: 15px;
+  background: #00ff90;
+}
+footer {
+  clear: both;
+  width: 960px;
+  height: 120px;
+  padding: 15px;
+  background: #c3590a;
+  border-top: 1px solid #000;
+}

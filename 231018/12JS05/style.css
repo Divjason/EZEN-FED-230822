@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 48px;
+  font-weight: bold;
+  gap: 10px;
+}
+.time {
+  width: 80px;
+  text-align: center;
+  letter-spacing: 5px;
+}

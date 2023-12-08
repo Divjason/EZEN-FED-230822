@@ -1,0 +1,41 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+
+section {
+  background: brown;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+ul {
+  /* border: 1px solid #fff; */
+  display: flex;
+  width: 400px;
+  flex-flow: wrap;
+}
+li {
+  width: calc(100% / 9 - 4px);
+  height: 30px;
+  background: cornsilk;
+  margin: 0 2px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}

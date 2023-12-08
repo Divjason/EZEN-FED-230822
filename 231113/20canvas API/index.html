@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="toolbar">
+        <div id="detail">
+          <div id="first">
+            <label for="stroke">색상</label>
+            <input id="stroke" type="color" value="#000000" />
+          </div>
+          <div id="second">
+            <label for="lWidth">선굵기</label>
+            <input id="lWidth" type="text" value="2" min="1" max="50" />
+          </div>
+        </div>
+        <button id="reset">지우기</button>
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
+  </body>
+</html>

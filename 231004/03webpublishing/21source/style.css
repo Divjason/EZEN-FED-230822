@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #333;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.square {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin: 30px;
+}
+.square span {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border: 1px solid #fff;
+  border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+  transition: 0.5s;
+}
+.square:nth-child(1):hover span {
+  background: crimson;
+  border: none;
+}
+.square:nth-child(2):hover span {
+  background: dodgerblue;
+  border: none;
+}
+.square:nth-child(3):hover span {
+  background: yellowgreen;
+  border: none;
+}
+.square span:nth-child(1) {
+  animation: circle 6s linear infinite;
+}
+.square span:nth-child(2) {
+  animation: circle 4s linear infinite;
+  animation-direction: reverse;
+}
+.square span:nth-child(3) {
+  animation: circle 10s linear infinite;
+}
+.square:hover span:nth-child(1) {
+  opacity: 0.3;
+}
+.square:hover span:nth-child(2) {
+  opacity: 0.6;
+}
+.square:hover span:nth-child(3) {
+  opacity: 0.8;
+}
+.square div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  text-align: center;
+  color: #fff;
+}
+.square div a {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+  padding: 8px;
+}
+@keyframes circle {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

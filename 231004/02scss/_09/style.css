@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/*
+@mixin notice-button {
+  font-size: $notice-btn-fs;
+  width: 150px;
+  padding: 7px;
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.35s;
+  &.complete:hover {
+    background: $complete-btn;
+    color: #fff;
+    border-color: transparent;
+  }
+  &.loading:hover {
+    background: $loading-btn;
+    color: #fff;
+    border-color: transparent;
+  }
+  &.error:hover {
+    background: $error-btn;
+    color: #fff;
+    border-color: transparent;
+  }
+}
+
+.complete {
+  @include notice-button;
+  border: 3px solid $complete-btn;
+}
+
+.loading {
+  @include notice-button;
+  border: 3px solid $loading-btn;
+}
+
+.error {
+  @include notice-button;
+  border: 3px solid $error-btn;
+}
+*/
+notice-button, .error, .loading, .complete {
+  font-size: 18px;
+  width: 150px;
+  padding: 7px;
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.35s;
+}
+notice-button.complete:hover, .complete:hover {
+  background: royalblue;
+  color: #fff;
+  border-color: transparent;
+}
+notice-button.loading:hover, .loading:hover {
+  background: green;
+  color: #fff;
+  border-color: transparent;
+}
+notice-button.error:hover, .error:hover {
+  background: crimson;
+  color: #fff;
+  border-color: transparent;
+}
+
+.complete {
+  border: 3px solid royalblue;
+}
+
+.loading {
+  border: 3px solid green;
+}
+
+.error {
+  border: 3px solid crimson;
+}

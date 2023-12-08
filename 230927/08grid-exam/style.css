@@ -1,0 +1,84 @@
+.project-gallery {
+  display: grid;
+  grid-template-rows: 300px 1fr 300px;
+}
+.project-gallery .items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 5px;
+}
+.project-gallery .items div {
+  height: 300px;
+}
+.project-gallery .story {
+  display: grid;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #f00;
+  overflow: hidden;
+}
+.items div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.items.top div:nth-child(1) {
+  background-image: url(/img/grid/3/project-image-01.jpg);
+}
+.items.top div:nth-child(2) {
+  background-image: url(/img/grid/3/project-image-02.jpg);
+}
+.items.top div:nth-child(3) {
+  background-image: url(/img/grid/3/project-image-03.jpg);
+}
+.items.top div:nth-child(4) {
+  background-image: url(/img/grid/3/project-image-04.jpg);
+}
+.items.top div:nth-child(5) {
+  background-image: url(/img/grid/3/project-image-05.jpg);
+}
+
+.items.bottom div:nth-child(1) {
+  background-image: url(/img/grid/3/project-image-06.jpg);
+}
+.items.bottom div:nth-child(2) {
+  background-image: url(/img/grid/3/project-image-07.jpg);
+}
+.items.bottom div:nth-child(3) {
+  background-image: url(/img/grid/3/project-image-08.jpg);
+}
+.items.bottom div:nth-child(4) {
+  background-image: url(/img/grid/3/project-image-09.jpg);
+}
+.items.bottom div:nth-child(5) {
+  background-image: url(/img/grid/3/project-image-10.jpg);
+}
+
+@media all and (max-width: 767px) {
+  .project-gallery {
+    grid-template-rows: repeat(3, auto);
+  }
+  .project-gallery .story {
+    grid-row: 1;
+  }
+  .project-gallery .story h1 {
+    font-size: 19px;
+    letter-spacing: -1px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .project-gallery {
+    grid-template-rows: repeat(2, auto);
+  }
+  .project-gallery .items {
+    grid-template-columns: repeat(5, auto);
+    margin-top: 5px;
+  }
+  .project-gallery .items div {
+    height: 150px;
+  }
+  .project-gallery .story {
+    grid-row: 1;
+  }
+}

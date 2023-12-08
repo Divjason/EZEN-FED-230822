@@ -1,0 +1,23 @@
+.button {
+  width: 150px;
+  height: 70px;
+  background-color: #ff6a00;
+  border: 10px solid #fff;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 70px;
+  box-shadow: 5px 5px 5px #a9a9a9;
+}
+.font_big {
+  font-size: 2em;
+}
+.font_italic {
+  font-style: italic;
+}
+.font_bold {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}

@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#item {
+  position: relative;
+}
+button {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #ccc;
+  font-size: 0.8em;
+  padding: 5px;
+}
+.over {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+.detail {
+  width: 400px;
+  text-align: left;
+  line-height: 1.8;
+  display: none;
+}
+#cover {
+  border: 5px solid transparent;
+}

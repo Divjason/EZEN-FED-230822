@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 30px;
+}
+h2 {
+  color: #3498db;
+}
+input {
+  border: 1px solid lightgray;
+  padding: 13px 15px;
+}
+input[type="text"] {
+  width: 500px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+input[type="text"]::placeholder {
+  color: #3498db;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+input[type="text"]:focus::placeholder {
+  opacity: 0;
+}
+input[type="submit"] {
+  width: 100px;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}

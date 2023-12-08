@@ -1,0 +1,30 @@
+body {
+  width: 700px;
+  height: 500px;
+  margin: 200px auto;
+}
+table,
+tr,
+th,
+td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+th,
+td:nth-child(even) {
+  text-align: center;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+td:last-child {
+  width: 250px;
+}
+
+a {
+  text-decoration: none;
+}

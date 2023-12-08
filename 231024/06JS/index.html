@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>참가자 명단</h1>
+      <form action="/part_process" method="post">
+        <ul id="userInput">
+          <li>
+            <label for="userName">이 름</label>
+            <input id="userName" type="text" />
+          </li>
+          <li>
+            <label for="major">전 공</label>
+            <input id="major" type="text" />
+          </li>
+        </ul>
+        <input id="btn" type="submit" value="등록하기" />
+      </form>
+      <table id="attendant">
+        <thead>
+          <tr>
+            <th>이 름</th>
+            <th>전 공</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+</html>

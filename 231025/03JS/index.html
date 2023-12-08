@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>조별 프로젝트 팀원 추첨</h1>
+      <form action="/choice_process" method="get">
+        <label for="seed"><input id="seed" type="text" />명 중에서</label>
+        <label for="total"><input id="total" type="text" />명 뽑기</label>
+        <input type="submit" id="raffle" value="추첨하기" />
+        <input type="reset" id="clear" value="지우기" />
+      </form>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>

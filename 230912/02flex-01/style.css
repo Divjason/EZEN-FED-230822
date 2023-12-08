@@ -1,0 +1,24 @@
+#wrap {
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  background: #fff;
+  border: 4px solid #000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#wrap div {
+  width: 100%;
+}
+
+#wrap div:first-child {
+  background: #eb4a24;
+}
+#wrap div:nth-child(2) {
+  background: #1488c8;
+}
+#wrap div:last-child {
+  background: #f7e041;
+}

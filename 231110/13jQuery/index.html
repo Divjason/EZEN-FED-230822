@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jQuery -->
+    <script defer src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-migrate-1.4.1.js"
+    ></script>
+    <!-- custom -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- title -->
+      <hgroup id="title">
+        <h1 data-name="information">Information</h1>
+        <h1 data-name="character">Character</h1>
+        <h1 data-name="multimedia">Multimedia</h1>
+      </hgroup>
+
+      <!-- container -->
+      <section id="container">
+        <div id="main" data-name="main" class="active">
+          <img src="../img/Middle_Foreground.png" alt="main" />
+        </div>
+        <div id="information" data-name="information">
+          <img src="../img/Information_Image.png" alt="info" />
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
+              possimus tenetur odit perspiciatis ipsum deserunt cupiditate iusto
+              dolor, illo reiciendis magni accusantium similique quibusdam
+              expedita ratione nobis nesciunt, provident consectetur.
+              Consequatur dolores, facere repellendus laudantium quaerat, optio
+              blanditiis, aliquid officia tempora pariatur iste ipsam nesciunt
+              tenetur sed voluptatibus. Aspernatur libero quis doloremque vitae
+              accusantium corrupti numquam quisquam animi explicabo molestias?
+              Assumenda deleniti, tempore nobis, incidunt maxime recusandae
+              repellendus eius quasi accusamus laborum magni reprehenderit
+              libero dolorem consequatur iure officia ipsam unde! Soluta esse
+              atque sapiente expedita nesciunt. Eius, reprehenderit explicabo!
+              Qui vitae commodi, excepturi a temporibus consectetur placeat eius
+              unde error quis officiis odio id quasi.
+            </p>
+          </div>
+        </div>
+        <div id="character" data-name="character">
+          <a href="#">Left Button</a>
+          <a href="#">Right Button</a>
+          <article class="show">
+            <h1>Princess Ann</h1>
+            <img src="../img/Character_Text_1.png" alt="ann01" />
+            <img src="../img/Character_1.png" alt="ann02" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              culpa nobis unde optio aut quaerat. Unde quidem quos perferendis
+              pariatur accusantium inventore, rerum ad natus expedita quo maxime
+              facere eius.
+            </p>
+          </article>
+          <article>
+            <h1>Joe Bradley</h1>
+            <img src="../img/Character_Text_2.png" alt="joe01" />
+            <img src="../img/Character_2.png" alt="joe02" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              culpa nobis unde optio aut quaerat. Unde quidem quos perferendis
+              pariatur accusantium inventore, rerum ad natus expedita quo maxime
+              facere eius.
+            </p>
+          </article>
+          <article>
+            <h1>Rodovich</h1>
+            <img src="../img/Character_Text_3.png" alt="vich01" />
+            <img src="../img/Character_3.png" alt="vich02" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              culpa nobis unde optio aut quaerat. Unde quidem quos perferendis
+              pariatur accusantium inventore, rerum ad natus expedita quo maxime
+              facere eius.
+            </p>
+          </article>
+        </div>
+        <div id="multimedia" data-name="multimedia">
+          <video src="#" width="940" height="460" controls="controls"></video>
+        </div>
+      </section>
+
+      <!-- navigation -->
+      <nav id="main_navigation">
+        <ul>
+          <li><a href="#" data-target="information">Movie Info</a></li>
+          <li><a href="#" data-target="character">Multimedia</a></li>
+          <li><a href="#" data-target="multimedia">Character</a></li>
+          <li><a href="#">Download</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

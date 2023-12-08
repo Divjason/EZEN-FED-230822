@@ -1,0 +1,19 @@
+* {
+  margin: 300px;
+}
+
+.jsample {
+  display: flex;
+  justify-content: center;
+}
+
+.jsample .box {
+  border: 1px solid #ccc;
+  width: 400px;
+  height: 200px;
+  background: #a2cbfa;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

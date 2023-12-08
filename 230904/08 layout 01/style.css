@@ -1,0 +1,168 @@
+@import url("/08\ layout\ 01/reset.css");
+
+/* Header */
+#main_header {
+  width: 960px;
+  height: 160px;
+  margin: 0 auto;
+  position: relative;
+}
+#main_header > #title {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+#main_header > #main_gnb {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#main_header > #main_lnb {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+#main_gnb > ul {
+  overflow: hidden;
+}
+#main_gnb > ul > li {
+  float: left;
+}
+#main_gnb > ul > li > a {
+  display: block;
+  padding: 2px 10px;
+  border: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+}
+#main_gnb > ul > li > a:hover {
+  background-color: #000;
+  color: #fff;
+}
+#main_gnb > ul > li:first-child > a {
+  border-radius: 10px 0 0 10px;
+}
+#main_gnb > ul > li:last-child > a {
+  border-radius: 0 10px 10px 0;
+}
+#main_lnb > ul {
+  overflow: hidden;
+}
+#main_lnb > ul > li {
+  float: left;
+}
+#main_lnb > ul > li > a {
+  display: block;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+}
+#main_lnb > ul > li > a:hover {
+  background-color: #000;
+  color: #fff;
+}
+#main_lnb > ul > li:first-child > a {
+  border-radius: 10px 0 0 10px;
+}
+#main_lnb > ul > li:last-child > a {
+  border-radius: 0 10px 10px 0;
+}
+
+/* Main Section */
+#content {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#content #main_section {
+  width: 750px;
+  float: left;
+}
+#content #main_aside {
+  width: 200px;
+  float: left;
+  margin-left: 10px;
+}
+#main_section > article.main_article {
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+/* Main Aside */
+input:nth-of-type(1) {
+  display: none;
+}
+input:nth-of-type(1) ~ div:nth-last-of-type(1) {
+  display: none;
+}
+input:nth-of-type(1):checked ~ div:nth-of-type(1) {
+  display: block;
+}
+input:nth-of-type(2) {
+  display: none;
+}
+input:nth-of-type(2) ~ div:nth-last-of-type(2) {
+  display: none;
+}
+input:nth-of-type(2):checked ~ div:nth-of-type(2) {
+  display: block;
+}
+section.buttons {
+  overflow: hidden;
+}
+section.buttons > label {
+  display: block;
+  float: left;
+  width: 100px;
+  height: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+}
+input:nth-of-type(1):checked ~ section.buttons > label:nth-of-type(1) {
+  background-color: #000;
+  color: #fff;
+}
+input:nth-of-type(2):checked ~ section.buttons > label:nth-of-type(2) {
+  background-color: #000;
+  color: #fff;
+}
+.item {
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid #000;
+  border-top: none;
+}
+.thumbnail {
+  float: left;
+}
+.description {
+  float: left;
+  margin-left: 10px;
+}
+.description > strong {
+  display: block;
+  width: 120px;
+  /* 정해놓은 너비값을 넘기는 경우 버리는 역할 */
+  white-space: nowrap;
+  /* 버려진 컨텐츠를 보이지 않게 하는 역할 */
+  overflow: hidden;
+  /* 버려진 컨텐츠 요소를 말줄임표 형식으로 표기해주는 역할 */
+  text-overflow: ellipsis;
+}
+
+/* Footer */
+#main_footer {
+  width: 960px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #000;
+  text-align: center;
+}
