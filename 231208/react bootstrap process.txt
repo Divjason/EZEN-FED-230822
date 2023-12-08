@@ -1,0 +1,11 @@
+<Code Process>
+
+1.react project launch
+- npx create-react-app .
+
+2.react bootstrap install
+- npm i react-bootstrap bootstrap
+
+3.react bootstrap css import
+
+4.react Typing

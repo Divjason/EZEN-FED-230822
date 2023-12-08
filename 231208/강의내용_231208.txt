@@ -1,0 +1,42 @@
+*CSR!!!!
+- SPA = 여러 페이지가 존재하더라도 html  파일은 1개다!!!!!
+
+*찬영!!!!
+- 롯데월드 > 욕심!!!
+- 배포 / firebase 도메인 변경!!!
+(*가능은 하나, .com => 구매!!!)
+- FE 개발자를 지원하는 취준생
+(*포폴 => 도메인 .com) 2/10
+
+2011년 FB / SNS 대부!!!
+공유~!!! 카카오톡 컨텐츠를 공유하면
+사진 & 텍스트 정보 (*전달!!!)
+Open Graph Tag
+
+배포 버전!!!!을 거쳐서 배포!!!!
+
+배포!!!
+
+1.파이어베이스 : 프로젝트 생성
+
+2.vscode > 터미널 : npm run build
+(*React가 SPA : 하나의 프로젝트에 여러페이지가 존재하더라도 .html 확장자로 되어있는 파일이 단일인 경우!!!)
+
+3.탐색기 > 루트폴더 > build라는 폴더 생성!!!
+
+4.파이어페이스 CLI(*명령어를 하나씩 순서대로 vscode 터미널 입력)
+
+5.파이어베이스 CLI 중 firebase init에서 옵션설정을 잘해야함!!!!
+- 다른 옵션은 그동안 html, css, js 만든 웹페이지의 호스팅과 동일하나, 다른 몇 개의 옵션설정!!!
+- What do you want to use as your public directory? build
+(*당신이 지금 배포하고자하는 데이터가 담겨있는 폴더가 어디냐?)
+- Configure as a single-page app (rewrite all urls to /index.html)? Yes
+(*당신이 배포하고자하는 데이터가 SPA?)
+- File build/index.html already exists. Overwrite? No
+(*만약 배포가 실패했을 경우에 출력될 메세지가 담긴 index.html파일을 build폴더 안에 덮어쓰기 하려고 하는데, 괜찮아?)
+
+6.최종적으로 배포고고!!!
+- firebase deploy
+- 행복한 배포 끝!!!
+
+
