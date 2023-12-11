@@ -1,0 +1,12 @@
+.win {
+  border: 10px solid #0f0;
+  color: #0f0;
+}
+.lose {
+  border: 10px solid #f00;
+  color: #f00;
+}
+.tie {
+  border: 10px solid #000;
+  color: #000;
+}

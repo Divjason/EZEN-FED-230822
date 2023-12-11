@@ -1,0 +1,37 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 10px;
+}
+.box {
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-img {
+  width: 400px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.win {
+  border: 10px solid #0f0;
+  color: #0f0;
+}
+.lose {
+  border: 10px solid #f00;
+  color: #f00;
+}
+.tie {
+  border: 10px solid #000;
+  color: #000;
+}

@@ -1,0 +1,69 @@
+<JS>
+https://openweathermap.org/api
+*"미리" 회원가입 해놓으면 좋은 곳!! :D
+
+
+1."클릭" 버튼을 누른다.
+(*이벤트)
+
+2.위에 있는 숫자가 증가해야한다.
+
+<React>
+
+0.Reaction(*반응)
+1.React는 UI를 효율적으로 관리하게 해주는 JS 라이브러리 언어
+2.React는 Component기반으로 실행하는 JS 기반의 언어
+3.React는 CSR(Client Side Rendering) 방식으로 작동하는 언어
+-> SSR(Server Side Rendering) 방식
+-> 컴포넌트가 탄생되는순간 (*mount) 서버로부터 데이터를 다 가져온다
+4.React > React Hooks 함수 공부
+5.사용자가 어떤 이벤트를 실행시켰을 때, 해당 이벤트에대한 결과값을 UI로 즉각적으로 반영하고자 할 때 => useState( )
+6.React는 이벤트가 발생하면 리랜더링이 일어납니다!!
+7.React의 App은 이벤트가 발생하면, 기본적으로 ReRendering이 일어나며, ReRendering이 발생하면, 변수는 값이 초기화된다!!! => 그렇기 때문에 변수안에 담긴 값은 계속무한반복으로 동일한 값에 벗어날 수 없었던 것이다!!!
+8.React의 App에서 setState( )함수는 비동기적으로 처리되기 때문에 실제 UI에 반영되는 결과값과 console.log( )로 확인하는 결과값이 1템포 다르게 보여질 수 있음!!!
+
+*컴퓨터 & 나 => 가위.바위.보 
+
+*리액트를 학습하기 좋은 시대에 만났음!!!!
+- 리액트 : 2011년 시장 (*클래스형 컴포넌트)
+- 리액트 : 2018년 (*함수형 컴포넌트)
+- 제이쿼리!!! (*실무 : 함수형 컴포넌트)
+- 2019~2020년 초반 클래스형 컴포넌트 
+
+*class Component의 강력한 무기 : 
+컴포넌트의 Lifecycle 컨트롤할 수 있는 굉장히 다양한 함수 및 요소!!!
+
+*functional Component
+컴포넌트의 Lifecycle => 
+
+*2019년말, React Hooks
+- useEffect( )
+
+*2023년도, React 공식홈페이지 : class component
+
+*Google : 기존 기능을 없애고자할 때 2년텀으로 권고
+
+
+<학습할 useEffect( )>
+실무에서 아래 함수를 직접 다룰일은 거의 없을 것이다!!!
+그런데, 실제 예전에 작업해놓은 결과물을 보았을 때, 해당 함수가 의미하는 것을 알도록!!
+우리가 앞으로 공부할 useEffect( ) 함수가 어디에서 기원했으며, 왜 필요한가? 에 대한 이해를
+돕기 위해서 과거 classComponent에서는 컴포넌트의 생애주기를 어떻게 관리했는가를 같이
+보았습니다!!!
+
+componentDidMount( ) => useEffect(cb, [ ])
+componentDidUpdate( ) => useEffect(cb, [arr])
+componentWillUnmount( ) => 더이상 컴포넌트를 사용하고하지 않을 때!!!
+
+가위.바위.보 게임 (*함수컴포넌트)
+=> 능력단위평가 (*클래스컴포넌트)
+
+*날씨 앱!!!
+/ API 데이터 / https://openweathermap.org/api
+(*국내 기상청)
+
+/ 현재 우리가 위치해있는 지역의 날씨정보를 받아와서 웹 브라우저 화면에 출력
+/ 내가 확인하고싶은 지역의 날씨정보도 같이 받아와서 웹 브라우저 화면에 출력
+
+
+
