@@ -1,0 +1,40 @@
+.nav-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 20px;
+}
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.nav-menu-area {
+  display: flex;
+  justify-content: space-around;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 20px;
+}
+.menu li a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 80px;
+}
+.search-Box {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  padding: 5px;
+  border-bottom: 1px solid #000;
+}
+.search-Box input {
+  border: none;
+  margin-left: 5px;
+}
+.search-Box input:focus {
+  outline: none;
+}

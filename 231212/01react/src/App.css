@@ -1,0 +1,19 @@
+body {
+  background: url(https://images.ctfassets.net/hrltx12pl8hq/6TIZLa1AKeBel0yVO7ReIn/1fc0e2fd9fcc6d66b3cc733aa2547e11/weather-images.jpg?fit=fill&w=1200&h=630)
+    center center/cover no-repeat;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+}
+.weather-box {
+  border: 3px solid #fff;
+  border-radius: 30px;
+  padding: 50px;
+  background: azure;
+}

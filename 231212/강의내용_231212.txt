@@ -1,0 +1,31 @@
+https://www.musinsa.com/app/
+https://www.musinsa.com/categories/item/001004
+https://www.musinsa.com/app/goods/3411311
+https://www.musinsa.com/app/goods/1211169?option_color=black&size=small&volume=10&acc=true
+
+
+-> 대기업 쇼핑몰 (*억대단위)
+
+? > 쿼리스트링 & 쿼리1 & 쿼리2 & 쿼리3
+쿼리값은 아무리 많아도 원 데이터의 경로값을 변경시키지 못함!!!
+
+https://www.musinsa.com/auth/login
+?referer=https%3A%2F%2Fwww.musinsa.com%2Fapp%2Forder%2Forder_form
+
+1.NavBar
+
+2.ProductAll(*상품리스트 전체를 보여주는 컴포넌트) > 
+- ProductCard(*상품의 썸네일이미지를 보여주는 컴포넌트)
+- ProductDetail(*실제 상품의 상세페이지 컴포넌트)
+
+3.Login
+
+http://127.0.0.1:5500/035/index.html?id=david&name=json&age=20
+
+디코딩 : decoding
+- 코드화 되어 있는 것을 해석할 때 사용하는 용어
+
+인코딩 : encoding
+- 일반 문자열로 되어 있는 것을 코드화로 전환시킬 때 사용하는 용어
+
+일반적으로 상단 주소창에 입력되는 파라미터 및 쿼리스트링 값을 코드화되어있는 문장!!!
