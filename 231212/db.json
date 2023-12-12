@@ -1,0 +1,148 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "img": "/track-jacket.jpeg",
+      "title": "아플리케 트랙 재킷",
+      "price": 99900,
+      "choice": true,
+      "new": true,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 1,
+      "img": "/oversize-hoodie.jpeg",
+      "title": "오버사이즈 플리스 후디",
+      "price": 29900,
+      "choice": true,
+      "new": true,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 2,
+      "img": "/sweat-shirt.jpeg",
+      "title": "스웨트셔츠",
+      "price": 39900,
+      "choice": false,
+      "new": true,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 3,
+      "img": "/design-hoodie.jpeg",
+      "title": "디자인 후드티",
+      "price": 39900,
+      "choice": false,
+      "new": true,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 4,
+      "img": "/shirt-dress.jpeg",
+      "title": "플라운스 디테일 셔츠 드레스",
+      "price": 29900,
+      "choice": true,
+      "new": false,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 5,
+      "img": "/flare-dress.jpeg",
+      "title": "시퀸 플레어 드레스",
+      "price": 39900,
+      "choice": false,
+      "new": false,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 6,
+      "img": "/one-shoulder-dress.jpeg",
+      "title": "라인스톤 스트랩 원숄더 드레스",
+      "price": 69900,
+      "choice": true,
+      "new": false,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 7,
+      "img": "/cottom-dress.jpeg",
+      "title": "프릴 디테일 코튼 드레스",
+      "price": 99900,
+      "choice": false,
+      "new": true,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 8,
+      "img": "/mash-dress.jpeg",
+      "title": "셔링 메쉬 드레스",
+      "price": 14900,
+      "choice": true,
+      "new": true,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 9,
+      "img": "/regular-jeans.jpeg",
+      "title": "스트레이트 레귤러 진",
+      "price": 19900,
+      "choice": false,
+      "new": true,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 10,
+      "img": "/ankle-jeans.jpeg",
+      "title": "슬림 레귤러 웨이스트 앵클 진",
+      "price": 19900,
+      "choice": true,
+      "new": false,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 11,
+      "img": "/high-jeans.jpeg",
+      "title": "스키니 하이웨이스트 진",
+      "price": 29900,
+      "choice": true,
+      "new": true,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 12,
+      "img": "/wide-jeans.jpeg",
+      "title": "와이드 하이웨이스트 진",
+      "price": 14900,
+      "choice": true,
+      "new": true,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 13,
+      "img": "/regular-wide-jeans.jpeg",
+      "title": "레귤러 웨이스트 와이드 진",
+      "price": 29900,
+      "choice": false,
+      "new": false,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 14,
+      "img": "/pattern-jacket.jpeg",
+      "title": "벨티드 퀼팅 재킷",
+      "price": 299000,
+      "choice": false,
+      "new": false,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 15,
+      "img": "/single-jacket.jpeg",
+      "title": "싱글 브레스티드 재킷",
+      "price": 69900,
+      "choice": false,
+      "new": false,
+      "size": ["S", "M", "L"]
+    }
+  ]
+}
