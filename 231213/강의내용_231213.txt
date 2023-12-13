@@ -1,0 +1,112 @@
+6개월 전, json > react에서 이미지 받아오는 방식
+CSR방식 / 단락회평가 / 삼항조건!!!
+
+React > img > 방식
+public / import / css src
+img 호스팅 => url
+github > 231213 > db.json
+
+*React > 쇼핑몰!!!!
+- Login 페이지
+- ProductAll 페이지 (*메인)
+- Navbar
+- ProductCard
+(*html, CSS => 박스구조화!!!)
+- Component(*블록 / 레고) 구조화 => 동적인 state 값 기준!!!
+- 성문 / 탑 / => 유령의성
+
+
+npm i react-router-dom
+npm install react-bootstrap bootstrap
+npm i --save @fortawesome/fontawesome-svg-core
+npm install --save @fortawesome/free-solid-svg-icons
+npm install --save @fortawesome/react-fontawesome
+npm i --save @fortawesome/pro-solid-svg-icons
+npm i --save @fortawesome/pro-regular-svg-icons
+npm i --save @fortawesome/pro-light-svg-icons
+npm i --save @fortawesome/pro-duotone-svg-icons
+
+page
+- Login
+- ProductAll
+- ProductDetail
+
+component
+- Navbar
+- ProductCard
+
+route
+- PrivateRoute
+
+열심히!!! json 활용!!!
+> 로컬컴퓨터!!!
+> 실전형식으로 외부 API 가지고와서 실습!!
+json > 로컬컴퓨터!!!
+
+json server npm
+
+내가 스스로 json > 서버에 업로드를 해서 
+fetch( )를 활용해서 진짜로 외부 API 데이터를 가져온것처럼 작업할 수 있도록 가짜 서버를 제공!!!
+
+1행 4개의 열!!!
+데스크탑 device 너비 긴!!! 
+<Row>
+<Col {lg="3"}>1</Col>
+<Col {lg="3"}>2</Col>
+<Col {lg="3"}>3</Col>
+<Col {lg="3"}>4</Col>
+</Row>
+
+모바일 device 너비 짧
+<Row>
+<Col {sm="6"}>1</Col>
+<Col {sm="6"}>2</Col>
+</Row>
+<Row>
+<Col {sm="6"}>1</Col>
+<Col {sm="6"}>2</Col>
+</Row>
+
+기본적으로 로그인은 안된상태!!! (false) 
+로그인 절차를 거치게되면 로그인이 됨!!
+로그인(true)이 되어있는 상태라면 로그아웃(false) 선택!!
+
+컴퓨터입장!!!
+현재 상태가 로그인 / 로그아웃
+
+결국엔 
+
+1.쇼핑몰 프로젝트
+1) Routes & Route
+2) useNavigate / useParams / useSearchParams
+(*API 경로)
+3) useState => 로그인 여부 판단
+4) Fake json server
+
+웹 퍼블리셔 / 프론트엔드
+
+1) 포폴 호스팅 4대장
+- 카페24 : 기간 제한 / 카페24 수시로 단속!!!
+- 파일질라 : 무료 / 60일 => 유료
+- netlify : 간단하게 호스팅 (*기간제한x / 용량제한o)
+- 파이어베이스
+
+https://my-json-server.typicode.com/Divjason/shopping-musinsa/products
+
+Firebase : 배포
+*사전에 npm run build!!!
+
+https://master--resonant-gnome-7c4baa.netlify.app/
+
+React 끝판왕 > Redux!!!
+가장 난이도가 어려운!!!
+
+
+
+
+
+
+
+
+
+
