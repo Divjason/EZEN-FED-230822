@@ -1,0 +1,40 @@
+채용공고 사이트
+- React FE + @ Redux
+- 필수요소!!!
+
+Redux는 React만의 소유물이 아님!!!
+Redux를 React에서 보다 편리하게 사용할 수 있도록
+npm안에 또다른 앱!!!!
+
+미션!!!
+리액트앱을 활용해서 버튼클릭 시, 숫자가 1씩 증가!!!
+
+미션!!!
+리액트앱을 활용해서 감소버튼 생성!!!!
+
+미션!!!
+로그인 버튼을 클릭했을 때, id & password값이 UI로 출력될 수 있도록!!!
+=> id : David / password : 1234
+
+1.React에서 Redux 실행순서
+
+1) 필요한 npm 설치하기
+- 리액트 - 리덕스 설치 : npm install react-redux
+- 리덕스 설치 : npm install redux
+
+2) 리덕스 세팅!!
+- index.js : App.js 아래에 존재하는 요소들에게 store의 영향을 줄 수 있도록 세팅 
+(Provider > react-redux)
+
+- store : createStore(reducer) 함수를 활용해서 생성
+(createStore > redux)
+
+- reducer라는 함수에 대한 정의
+
+
+
+
+
+
+
+
