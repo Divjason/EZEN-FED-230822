@@ -1,0 +1,97 @@
+0.Why need Redux?
+- Props Drilling 단점 보완
+
+1.Redux
+- Component > Action > useDispatch( ) > Reducer > useSelector( ) > Store
+
+2.Redux : Syncronous (*동기화 작업)
+
+3.외부 API Data => Asyncronous (*비동기화 작업)
+
+4.Redux Toolkit (*Redux 외부 플러그인을 더해서 업데이트)
+
+5.Redux Saga / Redux Thunk
+- 기능적 : Saga > Thunk (*난이도 / 규모가 큰 프로젝트)
+- 효율성 : Thunk > Saga (*학습량 / 필수적으로 사용)
+
+6.Redux Middleware
+- 컨셉이름 / 하드웨어 < - > 소프트웨어
+
+1) 상품 리스트값
+2) 로그인 여부값
+
+1년전만 하더라도 F/E
+- JS / TS / React + Redux / Node.js
+
+Now....
+- Next.js
+
+
+
+
+
+- MBTI (*삼각형)
+- Vue.js (*삼각형)
+
+- Figma Valiable : 강력!!! 
+- JS > Animation 라이브러리 (*GSAP)
+- HTML & CSS & JS > Web API
+- TodoList (with TypeScript)
+- StyleComponent
+- React Animation
+- Bitcoin
+- Netflix ver1 / ver2
+
+- Diary (*포기)
+- Node.js (*포기)
+
+*넷플릭스 사이트 구현 (*Clone)
+1) 영화 데이터!!! => API 데이터를 가져와야한다!!!
+2) the movie database => TMDB
+
+*설치해야하는 npm
+1) react-Bootstrap
+npm install react-bootstrap bootstrap
+
+2) react router
+npm install react-router-dom
+
+3) react redux
+npm install react-redux
+
+4) redux
+npm install redux
+
+5) redux-thunk
+npm install redux-thunk
+
+6) redux-devtools-extension
+npm install --save redux-devtools-extension --force
+
+*생성해야하는 페이지
+1) 홈페이지 (*Main)
+2) Movie 페이지
+3) Movie Detail 페이지
+
+*async ( ) : 비동기처리!!!
+- 외부에서 가져오는 API Data간 상관관계가 있는 경우에는 아무리 비동기처리로 진행한다고 해도 Data 수집에대한 우선순위가 필요할 수 있다!!
+- await : 비동기처리하는 프로세스를 일시적으로 동기화처리로 변환시켜주는 역할!!!!
+
+*F/E : API 데이터 호출 받아오는 3대장!!!
+- fetch / ajax / Axios
+- 실제 가져오는 API데이터가 복수인 경우 비동기방식으로 끌어올 수 있다.
+- fetch함수의 경우, json 데이터를 객체로 변환시켜줘야하는 불편함 => Axios는 바로 객체값으로 가져온다!!!
+- JS 비동기처리 : CB / Promise / Fetch( ) => then, error
+- Web 기반에서만 fetch( ) 최고!!!
+- Axios는 Node.js 기반에서 사용가능한 외부 API 호출 문법이기 때문!!!
+
+
+
+
+
+
+
+
+
+
+
