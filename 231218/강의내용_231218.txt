@@ -1,0 +1,24 @@
+1.상단부 : React-Bootstrap 레이아웃 가이드
+
+2.외부 API Data를 Import 여러가지 방법!!!
+- JS Data : fetch( )
+> 장 : Web API 별도 설치 /  사용가능!!!
+> 단 : json Data => 객체 변환 작업 / FE & BE => Node.js
+Node.js Runtime (*fetch( ) => 구동)
+
+- Axios
+> 장 : Web 기반 JS 프로젝트 & Node.js API / json <-> Object 별도 변환 작업 거치지 않아도 된다
+*인터셉터 기능 디버깅 (*버그 : 벌레 => 소스코드 작성할 때, 문제 초반x / 중반o)
+*
+
+> 단 : 내장 API / 외부 Data 설치!!! => npm
+
+
+- jQuery : ajax / => 기존 프로젝트 / JS / React 목적
+
+*지금하고 있는 넷플릭스 사이트 난이도 최상급!!!
+- redux / thunk
+- useEffect / Routes / Route / Axios / Spiner / API / Slider
+- useNavigate / useParams / useSearchParams
+
+

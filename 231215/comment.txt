@@ -1,0 +1,10 @@
+Photoshop Tool을 활용한 기본적인 웹 배너 및 상세페이지 제작 등 UI 디자인 기획.편집이 가능하며, 특히 Layer Mask & Cliping Mask 등의 고급기능을 통한 웹 페이지 제작물 역시 가능합니다. Web UI 개인 프로젝트 진행 시, Main 페이지에 필요한 다수의 이미지 역시 직접 제작해본 경험이 있습니다.
+
+HTML5의 Sementic 태그를 사용한 개인 프로젝트를 다수 진행하였으며, 특히 웹 페이지 개발 시 CSS의 flex/grid Style 적용까지 고려한 Box Structure 가이드를 적용하여 작업이 가능합니다.
+
+CSS3의 최신 Web API 기능중 하나인 animation 기능을 적극 활용한 작업 포트폴리오가 다수 있으며, 웹 브라우저간 Cross-Browsing까지 고려해 스타일을 적용할 수 있습니다.
+Responsive Web 페이지를 구현할 수 있는 그리드 레이아웃 시스템을 명확하게 준수하고 있습니다.
+
+Google FireBase를 활용한 웹 프로젝트 deploy가 가능하며, 기타 Google GMP등 (*Google Analytics) 과의 Tool 협업 역시 가능합니다. 또한 Single Page Application 배포 역시 FireBase를 활용해 배포한 경험이 있습니다.
+
+Git을 활용한 버전관리 및 Team Project 진행 시, Data Transfer 등 다양한 경험을 쌓았습니다. 특히 git Branch 생성 후 Pull & Push 등의 상호보완 시스템을 이해하고, 여러 개발자들과의 협업 역시 가능한 수준입니다. 또한 CLI 방식을 통한 효율적인 git repository 관리도 가능하여, 데이터 Backup에 항상 주의를 기울이고 있습니다.
