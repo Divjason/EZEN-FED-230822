@@ -1,6 +1,6 @@
 .wrapper {
   background: #000;
-  width: 100vw;
+  width: 99.1vw;
   height: 100%;
 }
 .nav-item {
@@ -40,6 +40,31 @@
   height: 50vh;
 }
 .card {
+  scale: 1.1;
   width: 300px;
   height: 200px !important;
+}
+.card h1,
+span {
+  color: #fff;
+}
+.card h1 {
+  font-size: 24px;
+}
+.overlay {
+  opacity: 0;
+}
+.card:hover .overlay {
+  opacity: 1;
+  padding: 10px;
+  background: rgba(43, 41, 41, 0.9);
+  transition: 0.2s;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 101%;
+}
+.badge {
+  font-size: 10px;
+  margin-right: 5px;
 }
