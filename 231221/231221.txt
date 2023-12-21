@@ -1,0 +1,105 @@
+Index > BR / 
+App > Routes & Route
+=> 1.5년 주기로 업데이트
+=> 대대적으로 바뀜!! / 실무 / 강의 / 또 바뀜 / 
+=> 실무 최신버전 & 라우트 => 리액트 최신
+
+<Link> : html "a" / <useNavigate> : 이벤트가 발생했을 때 사용자를 특정 위치로 이동시켜줄 목적!!
+
+1.그동안
+- index.js > BrowerRouter
+- App.js > Routes / Route
+
+2.오늘
+- Router.tsx > BrowerRouter / Routes / Route
+- App.tsx > Router.tsx
+- Rest API / Router
+- / : index
+- /prouct
+- /product/1
+- Coding / Dev : 영어 (*영어권 문화!!)
+- 물건 / Outlet
+
+*Coding / Publishing FE
+- BE 학습 : 사용자 어떤 이벤트 실행 => 에러메세지x / 웹브라우저
+
+*디버깅 :
+- JS => TS
+- BrowserRoutet => CB
+
+Outlet : 
+- createBrowserRouter를 통해서 기본 경로 페이지를 설정
+- children 요소를 활용해서 기본 경로 페이지의 자식 요소 경로설정
+- 자식 요소 경로는 부모 페이지 안에서 <Outlet/> 컴포넌트를 활용해서 불러올 수 있음!!!
+- 부모 요소의 페이지가 자식 요소의 페이지에게 특정한 데이터값을 전달할 수 있음!!!
+- Outlet 안에 context 라는 속성을 활용해서 전달
+- 자식 요소의 페이지는 useOutletContext( ) 리액트 훅을 활용해서 가져올 수 있음 (*객체 형태)
+- useParams( )라는 훅을 활용해서 파라미터값을 가져올 때에도 값의 형태는 동일하게 객체였다
+
+1.기본적인 React hooks 체험
+
+2.React hooks 활용 > 간단한 예제 : 
+- toDolist
+- emotion Diary
+
+3.React functional components VS class components
+- 가위.바위.보
+
+4.React + API
+- Weather APP
+
+5.React 기능 (state / filter / search / parameter / query)
+- shopping mall
+
+6.React state관리 고급기능 (redux / thunk)
+- 연락처 관리 App
+
+7.React Clone Webpage
+- Netflix
+
+8.React component간의 데이터를 parameter / query & React Styled Components
+- 고양이 MBTI
+
+9.React with TS + Styled Component
+- Todolist
+
+10.[중.고급단계] React Browser Router
+- CreateBrowserRouter( )
+
+11.recoil
+
+12.React Animation
+
+fetch( ) : JS
+- 외부 API 실세!!!
+- Axios
+- React Query
+
+Coin.tsx : 가상화폐 개별정보
+Coins.tsx : 여러개 가상화폐 데이터를 목록화
+
+styled-components : Theme / 값을 props
+type이 지정된 것이 없다!!!
+styled-components 안에 개발자가 직접 스타일의 타입을 정의!!!
+
+npm i @types/styled-components
+
+현대의 UI/UX는
+Components 기반
+Atomic 디자인 시스템
+- 일관성있는 디자인 스타일 가이드!!!
+- 효율적으로 BI / CI 관리 목적
+
+useParams
+
+css를 사용할 때에도 초기값 reset
+styled-components
+
+flatuicolors
+
+
+
+
+
+
+

@@ -7,6 +7,7 @@ import Title from "./Title";
 interface props {
   toDo: string;
   setTodo: (todo: string) => void;
+  onAdd: (todo: string) => void;
 }
 
 const Container = styled.div`
@@ -50,10 +51,11 @@ const InputContainer = styled.div`
   gap: 16px;
 `;
 
-const TodoInput = ({ toDo, setTodo }: props) => {
+const TodoInput = ({ toDo, setTodo, onAdd }: props) => {
   const onAddTodo = () => {
     if (toDo === "") return;
-    setTodo(toDo);
+    onAdd(toDo);
+    setTodo("");
   };
   return (
     <Container>
