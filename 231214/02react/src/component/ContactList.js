@@ -6,6 +6,8 @@ import { useSelector } from "react-redux";
 
 const ContactList = () => {
   const { contact, keyWord } = useSelector((state) => state);
+  const test = useSelector((state) => state);
+  console.log(test);
   const [filteredList, setFilteredList] = useState([]);
   useEffect(() => {
     if (keyWord !== "") {

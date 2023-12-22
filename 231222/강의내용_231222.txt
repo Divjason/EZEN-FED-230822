@@ -1,0 +1,11 @@
+1.코인 파프리카 > 코인 정보
+https://api.coinpaprika.com/v1/coins
+
+2.코인 파프리카 데이터 + 코인 이미지
+https://coinicons-api.vercel.app
+https://coinicons-api.vercel.app/api/icon/btc
+
+https://my-json-server.typicode.com/Divjason/coinlist/coins
+https://my-json-server.typicode.com/Divjason/coinprice/coinprice
+
+useMatch( ) : 현재 주소창에 입력된 경로값에 대한 정보를 출력해주는 리액트 훅

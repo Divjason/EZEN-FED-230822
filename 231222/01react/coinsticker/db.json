@@ -1,0 +1,268 @@
+{
+  "coinprice": [
+    {
+      "id": "btc-bitcoin",
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "rank": 1,
+      "circulating_supply": 19576888,
+      "total_supply": 19576875,
+      "max_supply": 21000000,
+      "beta_value": 1.10757,
+      "first_data_at": "2010-07-17T00:00:00Z",
+      "last_updated": "2023-12-21T23:30:19Z",
+      "quotes": {
+        "USD": {
+          "price": 43955.99607641144,
+          "volume_24h": 20556355698.699577,
+          "volume_24h_change_24h": -21.72,
+          "market_cap": 860521612116,
+          "market_cap_change_24h": 0.62,
+          "percent_change_15m": -0.01,
+          "percent_change_30m": -0.04,
+          "percent_change_1h": -0.11,
+          "percent_change_6h": 0.78,
+          "percent_change_12h": -0.03,
+          "percent_change_24h": 0.61,
+          "percent_change_7d": 1.97,
+          "percent_change_30d": 17.38,
+          "percent_change_1y": 161.61,
+          "ath_price": 68692.13703693185,
+          "ath_date": "2021-11-10T16:50:00Z",
+          "percent_from_price_ath": -36.02
+        }
+      }
+    },
+    {
+      "id": "eth-ethereum",
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "rank": 2,
+      "circulating_supply": 120186944,
+      "total_supply": 120186944,
+      "max_supply": 0,
+      "beta_value": 1.06433,
+      "first_data_at": "2015-08-07T00:00:00Z",
+      "last_updated": "2023-12-21T23:30:19Z",
+      "quotes": {
+        "USD": {
+          "price": 2243.0291543814888,
+          "volume_24h": 12424308891.624117,
+          "volume_24h_change_24h": 1.67,
+          "market_cap": 269582819368,
+          "market_cap_change_24h": 3.29,
+          "percent_change_15m": -0.01,
+          "percent_change_30m": -0.09,
+          "percent_change_1h": -0.08,
+          "percent_change_6h": 0.31,
+          "percent_change_12h": -0.34,
+          "percent_change_24h": 1.85,
+          "percent_change_7d": -3.12,
+          "percent_change_30d": 8.69,
+          "percent_change_1y": 84.59,
+          "ath_price": 4864.113196614236,
+          "ath_date": "2021-11-10T16:05:00Z",
+          "percent_from_price_ath": -53.9
+        }
+      }
+    },
+    {
+      "id": "usdt-tether",
+      "name": "Tether",
+      "symbol": "USDT",
+      "rank": 3,
+      "circulating_supply": 91025353598,
+      "total_supply": 94233010193,
+      "max_supply": 0,
+      "beta_value": -0.00192148,
+      "first_data_at": "2015-02-25T00:00:00Z",
+      "last_updated": "2023-12-21T23:30:20Z",
+      "quotes": {
+        "USD": {
+          "price": 1.00135520631362,
+          "volume_24h": 51088067063.93407,
+          "volume_24h_change_24h": -5.45,
+          "market_cap": 91148711732,
+          "market_cap_change_24h": 0.08,
+          "percent_change_15m": -0.02,
+          "percent_change_30m": -0.02,
+          "percent_change_1h": 0.04,
+          "percent_change_6h": -0.07,
+          "percent_change_12h": 0.06,
+          "percent_change_24h": -0.02,
+          "percent_change_7d": 0.06,
+          "percent_change_30d": 0.01,
+          "percent_change_1y": 0.05,
+          "ath_price": 1.21549,
+          "ath_date": "2015-02-25T17:04:00Z",
+          "percent_from_price_ath": -17.63
+        }
+      }
+    },
+    {
+      "id": "bnb-binance-coin",
+      "name": "Binance Coin",
+      "symbol": "BNB",
+      "rank": 4,
+      "circulating_supply": 151694333,
+      "total_supply": 151070177,
+      "max_supply": 200000000,
+      "beta_value": 0.777024,
+      "first_data_at": "2017-07-25T00:00:00Z",
+      "last_updated": "2023-12-21T23:30:20Z",
+      "quotes": {
+        "USD": {
+          "price": 270.2676360458934,
+          "volume_24h": 1418905441.9852118,
+          "volume_24h_change_24h": 17.16,
+          "market_cap": 40998068781,
+          "market_cap_change_24h": 4.01,
+          "percent_change_15m": -0.4,
+          "percent_change_30m": -0.5,
+          "percent_change_1h": -0.26,
+          "percent_change_6h": -0.57,
+          "percent_change_12h": 0.01,
+          "percent_change_24h": 4.01,
+          "percent_change_7d": 6.73,
+          "percent_change_30d": 14.73,
+          "percent_change_1y": 10.45,
+          "ath_price": 690.56767219,
+          "ath_date": "2021-05-10T06:30:00Z",
+          "percent_from_price_ath": -60.86
+        }
+      }
+    },
+    {
+      "id": "sol-solana",
+      "name": "Solana",
+      "symbol": "SOL",
+      "rank": 5,
+      "circulating_supply": 427337562,
+      "total_supply": 565384557,
+      "max_supply": 0,
+      "beta_value": 1.77714,
+      "first_data_at": "2020-08-26T00:00:00Z",
+      "last_updated": "2023-12-21T23:30:22Z",
+      "quotes": {
+        "USD": {
+          "price": 94.26217889739809,
+          "volume_24h": 5222439773.928694,
+          "volume_24h_change_24h": 61.51,
+          "market_cap": 40281769719,
+          "market_cap_change_24h": 14.6,
+          "percent_change_15m": 0.27,
+          "percent_change_30m": -0.45,
+          "percent_change_1h": 0.27,
+          "percent_change_6h": 1.23,
+          "percent_change_12h": 7.78,
+          "percent_change_24h": 14.73,
+          "percent_change_7d": 25.08,
+          "percent_change_30d": 62.93,
+          "percent_change_1y": 701.34,
+          "ath_price": 259.7046020809965,
+          "ath_date": "2021-11-06T21:50:00Z",
+          "percent_from_price_ath": -63.72
+        }
+      }
+    },
+    {
+      "id": "xrp-xrp",
+      "name": "XRP",
+      "symbol": "XRP",
+      "rank": 6,
+      "circulating_supply": 54065019376,
+      "total_supply": 99988129668,
+      "max_supply": 100000000000,
+      "beta_value": 0.892874,
+      "first_data_at": "2013-08-04T00:00:00Z",
+      "last_updated": "2023-12-21T23:30:19Z",
+      "quotes": {
+        "USD": {
+          "price": 0.6246149905499496,
+          "volume_24h": 1074487183.7229757,
+          "volume_24h_change_24h": -16.07,
+          "market_cap": 33769821567,
+          "market_cap_change_24h": 1.39,
+          "percent_change_15m": -0.03,
+          "percent_change_30m": -0.08,
+          "percent_change_1h": 0.18,
+          "percent_change_6h": 1.13,
+          "percent_change_12h": 0.93,
+          "percent_change_24h": 1.27,
+          "percent_change_7d": -1.46,
+          "percent_change_30d": 1.71,
+          "percent_change_1y": 79.08,
+          "ath_price": 3.84194,
+          "ath_date": "2018-01-04T07:14:00Z",
+          "percent_from_price_ath": -83.75
+        }
+      }
+    },
+    {
+      "id": "usdc-usd-coin",
+      "name": "USDC",
+      "symbol": "USDC",
+      "rank": 7,
+      "circulating_supply": 24773553859,
+      "total_supply": 24771952865,
+      "max_supply": 0,
+      "beta_value": 0.0231076,
+      "first_data_at": "2018-10-09T00:00:00Z",
+      "last_updated": "2023-12-21T23:30:21Z",
+      "quotes": {
+        "USD": {
+          "price": 1.0008440330477006,
+          "volume_24h": 8091459520.655436,
+          "volume_24h_change_24h": -35.75,
+          "market_cap": 24794463557,
+          "market_cap_change_24h": -0.54,
+          "percent_change_15m": -0.04,
+          "percent_change_30m": -0.01,
+          "percent_change_1h": 0.01,
+          "percent_change_6h": -0.11,
+          "percent_change_12h": 0.03,
+          "percent_change_24h": -0.05,
+          "percent_change_7d": 0.07,
+          "percent_change_30d": -0.01,
+          "percent_change_1y": 0.05,
+          "ath_price": 1.90619801,
+          "ath_date": "2018-10-11T06:35:00Z",
+          "percent_from_price_ath": -47.49
+        }
+      }
+    },
+    {
+      "id": "ada-cardano",
+      "name": "Cardano",
+      "symbol": "ADA",
+      "rank": 8,
+      "circulating_supply": 35347172534,
+      "total_supply": 36454694074,
+      "max_supply": 45000000000,
+      "beta_value": 1.26643,
+      "first_data_at": "2017-10-01T00:00:00Z",
+      "last_updated": "2023-12-21T23:30:19Z",
+      "quotes": {
+        "USD": {
+          "price": 0.6315728103578224,
+          "volume_24h": 733840080.0442677,
+          "volume_24h_change_24h": 28.7,
+          "market_cap": 22324313096,
+          "market_cap_change_24h": 7.27,
+          "percent_change_15m": -0.18,
+          "percent_change_30m": -0.61,
+          "percent_change_1h": 0.65,
+          "percent_change_6h": 2.76,
+          "percent_change_12h": 3.36,
+          "percent_change_24h": 7.26,
+          "percent_change_7d": -3.37,
+          "percent_change_30d": 65.77,
+          "percent_change_1y": 146.11,
+          "ath_price": 3.0950278974839334,
+          "ath_date": "2021-09-02T06:00:00Z",
+          "percent_from_price_ath": -79.6
+        }
+      }
+    }
+  ]
+}
