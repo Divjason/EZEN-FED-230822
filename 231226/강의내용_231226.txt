@@ -1,0 +1,39 @@
+1.파프리카 코인 : api data
+
+2.2개 페이지를 운영
+
+3.1번페이지 : main (*api에 포함되어 있는 코인정보를 리스트 & 목록)
+http://localhost:3000/
+
+4.2번페이지 : 각 코인 목록을 클릭했을 때, 상세 정보를 출력
+http://localhost:3000/btc-bitcoin
+
+5.코인의 상세페이지 안에서 chart & price 값에 대한 세부정보를 보여주고 싶다
+
+6.useMath( )
+
+*Nested Routes (*부모요소의 컴포넌트 안에 자식컴포넌트를 라우트하는 방법)
+
+7.react query
+- react 사용하는 수많은 개발자 고충 : props 전달할 때 고충
+- useContext / redux / thunk
+- 심리적인 여유 (*2013년부터 비슷한 경험)
+- 1개의 문법 (*최선) => 1.5년 문법을 능가하는 또다른 문법
+- 새롭다라고 이야기하고 있는 그 문법을 공부하고있는 와중에 또 다른 진영에 이게 최고다! 라고 말하는 문법이 또 나타나고
+- 또 다른 문법이 탄생한다
+- 정답? x => 화면 구현 (무한가지) / 제가 주로사용하는 문법 / 
+
+8.react helmet
+npm i react-helmet
+npm i @types/react-helmet
+
+*Framer Motion 테스트
+
+npm install framer-motion
+npm install styled-components
+npm i @types/styled-components
+
+
+
+
+
