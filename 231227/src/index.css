@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  color: #000;
+  line-height: 1.2;
+  background: linear-gradient(135deg, #e09, #d0e);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

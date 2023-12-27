@@ -1,0 +1,32 @@
+1.React Graphic Design
+- bootstrap
+- framer motion
+- styled components
+
+2.framer Motion
+- useMotionValue : 어떤 특정 motion에 기본 value값을 설정 및 변경된 값을 저장할 수 있는 React Hooks 중 하나!!
+
+- useTransform : 특정 요소의 motion value값에 따라서 또 다른 요소에 애니메이션 효과를 적용하고 싶을 때 사용!!
+
+-800 => 2
+-400 => 1.5
+0 => 1
+400 => 0.5
+800 => 0
+
+- useScroll(*구버전 useViewportScroll) : 특정 요소의 스크롤 이벤트를 적용하고 싶을 때 사용!!
+
+- AnimatePresence : 특정 요소에 애니메이션 효과를 적용하고, 애니메이션 단계별 효과를 컨트롤 하고자 할 때 사용할 수 있는 컴포넌트 (start / animate / finish)
+
+*React & TS : 칸반보드 (*ToDoList : 상위버전 / 마우스 드래그 & 드롭)
+- Recoil : Redux
+
+*2차 넷플릭스
+
+*JS 애니메이션 효과 & 피그마 Variable & JS Basic & 면접질문 & 코테 실전문제
+
+
+
+
+
+
