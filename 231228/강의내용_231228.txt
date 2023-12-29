@@ -1,0 +1,87 @@
+*React : 
+- Class Components
+- Functional Components
+- React Hooks 함수
+(*Variable React Hooks)
+- Developers : 시간 // 보수
+- 경력관리 // 언어학습 프로세스
+
+*React : Props transfer
+**Recoil : State management
+**Virtual Coin Project / Theme: Dark / Light
+
+1) Recoil을 사용하지 않고 state management
+- index.tsx Theme Provider => App.tsx
+- index => App => Router => Coins & Coin
+
+2) Recoil을 사용해서 state management
+- redux / thunk 
+- global components > props
+- 상위 컴포넌트 장치!!!
+- RecoilRoot가 atom이라는 값을 사용하고자 하는 모든 전역 컴포넌트 위에 존재!!
+- 기존 useState가 하던 역할 (*atom 함수 안에있는 객체)
+- atom을 사용하고자 하는 컴포넌트에 가서 atom를 불러와서 사용!!!
+(*useRecoilValue 리액트 훅)
+- dark VS light : atom 값을 편집.수정
+(*useSetRecoilState 리액트 훅)
+
+**모든 알고리즘은 항상 basic Default value를 정의하고 시작하기 마련
+- 기본적으로 light가 default value 정의하고 시작!!!
+(*dark theme = false / light theme = true)
+- dark VS light를 결정짓는 요소는 결국 event로 인해서 촉발!!!
+- event의 trigger(*방아쇠) 요소 "button"
+
+*기본 => 응용
+실무 : useState / useEffect(*장점 / 단점)
+useEffect => react query 라이브러리
+usetState => Recoil 라이브러리
+
+**TodoList Upgrade version
+- style componets (*TS) : 
+npm install styled-components
+npm install @types/styled-components
+
+- react router
+npm install react-router-dom
+
+- react query
+npm install react-query
+
+- recoil
+npm install recoil
+
+**useState( ) : state management 
+=> form element
+
+1개의 단일 컴포넌트 안에 다양한 form 태그 요소들을 경험했던 적이 있었음
+
+input : type = text
+input : type = password
+textarea
+{...toDo,  }
+
+*react hook form
+- 1개의 단일 컴포넌트 안에 복수의 여러 form 태그 요소들을 사용하더라도 보다 효율적으로 관리할 수 있도록 해주는 라이브러리!!!
+
+**useForm( )에 반환된 React Hooks 함수!!!
+- register(*form 요소 안에 입력된 value를 name이라는 키값을 기준으로 저장하는 역할)
+- watch(*form 요소 안에 입력된 value를 확인할 수 있도록 해주는 역할)
+- handleSubmit(*form 요소 안에 입력된 value값을 submit 이벤트가 발생되었을 때, 객체형태로 변환하여 출력해주는 역할)
+- Form 태그 유효성 검사!!!
+(*몇 자이상 입력하지 않으면 안됨 & 필수 입력사항)
+- formState : form 요소에 값 입력 => 값 정보 보관해주는 역할
+- setError : 에러 커스터마이징 가능
+- setValue : 입력값에 대한 커스터마이징 가능
+
+*JS : 정규식 표현!!!
+**암호학 / 복호 / 암호
+**AI(*무조건 해외)
+***40세 아들 (*불치병) 
+
+*react 회원가입 form
+- 패스워드 / 패스워드 확인
+
+*가
+
+
+
