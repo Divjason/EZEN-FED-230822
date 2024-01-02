@@ -1,0 +1,64 @@
+1.난이도가 있는 프로젝트 => 기존에 하고있던 프로젝트 비교적 쉽게!!!
+
+2.react에 대한 다양한 hooks 체험
+
+3.Recoil : state management hooks
+- useContext / Redux => props 전달 비효율 개선
+- atoms => state 변수 혹은 객체 
+
+4.지금 우리가 하려고하는 예제
+- 간단한 단위 변환기 제작!!!
+- 1시간 => 60분
+- 120분 => 2시간
+(*recoil)
+
+5.atom( ) 안에 있는 값을 사용하기 위한 여러가지 hooks
+- useRecoilValue : atom( ) 값을 가져오기만 할 때
+- useRecoilState : atom( ) 값을 가져와서 편집하고자 할 때
+
+event {
+  currentTarget : "value"
+}
+
+npm i recoil @types/styled-components styled-components
+
+1.react & ts 설치 :
+- npx create-react-app . --template typescript
+
+2.styled-components 설치 :
+- npm i @types/styled-components
+- npm i styled-components
+
+3.recoil 설치 :
+- npm i recoil
+
+4.router 설치 :
+- npm i react-router-dom
+
+5.react query 설치 :
+- npm i react-query
+
+6.react beautiful dnd 설치 :
+- npm i react-beautiful-dnd
+- npm i @types/react-beautiful-dnd
+
+
+
+
+draggableId : 드래그 & 드롭을 하고자 했던 아이템의 고유 아이디
+destination : 드래그 & 드롭을 했을 때의 마지막 위치 (*도착점)
+source : 드래그 & 드롭을 하고자 했던 아이템 세부정보 (*시작점)
+
+*2개의 인자값을 받아서 사용!!!
+
+slice( ) : 기존에 있던 배열의 값을 새로운 배열로 반환!!!
+- (0, 2) => 첫번째 인자값의 인덱스부터 시작해서 두번째 인자값의 인덱스값 바로 이전까지를 선택해서 잘라내는 역할을 하는 메서드
+
+splice( ) : 
+- (0, 2) => 첫번째 인자값의 인덱스부터 시작해서 두번째 인자값의 개수만큼의 배열 내 아이템을 잘라내는 역할을 하는 메서드
+
+Refactoring :
+- 코드를 작성했음 => 하나의 컴포넌트에 너무 많은 정보가 몰려있게 되었을 때 비효율적으로 작동할 수 있음!!!
+- 비효율적인 코드를 분산시켜야 할 필요!!
+
+
