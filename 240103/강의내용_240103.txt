@@ -1,0 +1,55 @@
+*강사, 박세진 전략!!!
+- 취업준비 / 하향지원을 통한 안정적인 취업 고려!!!
+- 퍼블리셔 지원 & 취업 : 타 학원 커리큘럼 + @
+- 프론트엔드 : 타 학원 커리큘럼 + @
+- 결국, 시장이 "어려워도" 취업!!!
+- 퍼블리셔 직군이 사라지고 있음
+- 프론트엔드 개발자 1명 => 738명
+- 퍼블리셔!!! / => 프론트엔드 : UI/UX 웹
+- "프론트엔드" => 2015년 이전만하더라도 "개발자"
+- 10명중 3~4명 / 프론트엔드 
+- 프론트 & 백 
+- 웹디자이너 => 웹페이지 / 프로모션배너
+- 2D 그래픽 이미지 기획.개발 => img / div / 
+
+*기존 atom : default key가 1개일 때에는 가능
+
+destination : 도착하고자하는 지점 정보
+droppableId / index
+
+source : 이동시키고자 하는 아이템 정보
+droppableId / index
+
+draggableId : 이동시키고자 하는 아이템 = "e" , "f"
+
+1) 동일한 카테고리에서 이동하고자할 때
+
+2) 상이한 카테고리로 이동하고할 때
+
+Recoil / react - hook - form / styled-components
+beautiful dnd
+
+6개월 : 
+- H / C / S / JS / TS / R / N
+
+- 퍼블리셔 : H / C / S / JS 
+- 프론트엔드 : JS (80%) + R (20%)
+
+- JS => TS 
+- React.js => Next.js 
+
+1.styled-components
+
+2.Recoil
+
+3.react-router
+
+4.framer-motion
+
+5.react-query
+
+6.react-hook-form
+
+*프레임워크 / 라이브러리의 차이점을 설명해보세요!!!
+
+*useMath : 특정 페이지에 도착해있으면 true / false
