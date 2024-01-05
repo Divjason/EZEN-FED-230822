@@ -1,0 +1,54 @@
+1.주소창에 존재하는 영화 id를 의미하는 parameter 값을 활용한다
+
+2.연결한다 (*parameter 값 + ?)
+
+3.연결해야하는 건 무엇일까
+- data => movieId
+
+1.tmdb > SEARCH > Movie 
+- https://api.themoviedb.org/3/search/movie
+- https://api.themoviedb.org/3/search/movie?query=rebel
+
+2.URLSearchParams > "search" = query="rebel"
+
+*피그마
+1.component & variable
+
+2.prototype
+
+*UI/UX
+1. Web Design : Component Design Trend
+- 상황에 따라서 디자인 요소 생성 적용 x
+- style guide 를 생성해놓고, 사전에 정의되어진 design만 가져다 사용!!
+- design 일관성 => BI => User Royalty => UX
+
+2.style guide :
+- font : color / style / size
+- color : light / dark
+- Icon
+
+
+main color : #ffde03
+second color : #4833cc
+text color : 
+- main color : #000
+- sub color : #606060
+- second color : #a99d9d
+
+color/bg/main
+color_bg_main
+color-bg-main
+
+feather icon
+iconify
+
+
+
+
+
+
+
+
+
+
+
